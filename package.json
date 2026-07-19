@@ -1,0 +1,20 @@
+{
+  "name": "archebase-physical-ai-handbook",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ArcheBase Physical AI Handbook — an open, continuously synced electronic book.",
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-feishu.mjs",
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "validate:data": "node scripts/validate-data.mjs"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "mermaid": "^11.9.0",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.18"
+  }
+}

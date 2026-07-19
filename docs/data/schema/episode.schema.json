@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ArcheBase Episode Manifest",
+  "type": "object",
+  "required": ["episode_id", "task", "robot", "steps"],
+  "properties": {
+    "episode_id": {"type": "string"},
+    "task": {"type": "string"},
+    "robot": {"type": "string"},
+    "license": {"type": "string"},
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["t", "timestamp", "action", "observation"],
+        "properties": {
+          "t": {"type": "integer", "minimum": 0},
+          "timestamp": {"type": "number"},
+          "action": {"type": "array", "items": {"type": "number"}},
+          "observation": {"type": "object"},
+          "outcome": {"type": "string", "enum": ["success", "failure", "intervention", "unknown"]}
+        }
+      }
+    }
+  }
+}

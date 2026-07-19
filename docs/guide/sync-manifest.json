@@ -1,0 +1,343 @@
+{
+  "source": "T7dLdyp0RolnUgxQCqTcXyZZnbc",
+  "revision": 85,
+  "syncedAt": "2026-07-19T13:16:40.626Z",
+  "documents": [
+    {
+      "token": "UgwUdtz3do3Gp3xNupPcuQFunSh",
+      "title": "00｜Physical AI 公共地基：智能体究竟在学习什么",
+      "revision": 32,
+      "group": "foundation",
+      "file": "01-00-physical-ai-公共地基-智能体究竟在学习什么.md"
+    },
+    {
+      "token": "KV1rdMZd5o9rufxEtV0cnxL8nWe",
+      "title": "01｜从机器人控制到 Flow Matching：π 系列的数学地基",
+      "revision": 77,
+      "group": "foundation",
+      "file": "02-01-从机器人控制到-flow-matching-π-系列的数学地基.md"
+    },
+    {
+      "token": "Sijed32IwosrevxLEe1c7MnDnNZ",
+      "title": "A0｜VLA 与直接策略学习：从条件模仿到机器人基础模型",
+      "revision": 16,
+      "group": "route-a",
+      "file": "01-a0-vla-与直接策略学习-从条件模仿到机器人基础模型.md"
+    },
+    {
+      "token": "Oes8d8LFno763NxcWFucK7kMnZy",
+      "title": "A1｜动作表示与生成式策略：从连续控制到 FAST Tokenizer",
+      "revision": 23,
+      "group": "route-a",
+      "file": "02-a1-动作表示与生成式策略-从连续控制到-fast-tokenizer.md"
+    },
+    {
+      "token": "Bgevdu3QuoIedrxrIaPcKv1Nn7b",
+      "title": "A2｜主流 VLA 谱系：RT、Open X、Octo、OpenVLA、GR00T 与 Gemini Robotics",
+      "revision": 9,
+      "group": "route-a",
+      "file": "03-a2-主流-vla-谱系-rt-open-x-octo-openvla-gr00t-与-gemini-robotics.md"
+    },
+    {
+      "token": "K9JidU938oDqc1xmEwNcNWQbnV7",
+      "title": "A3.1｜π0 架构：视觉语言模型如何接上连续机器人控制",
+      "revision": 25,
+      "group": "route-a",
+      "file": "04-a3-1-π0-架构-视觉语言模型如何接上连续机器人控制.md"
+    },
+    {
+      "token": "G5ivdQQZCoaQQUxR4mbcYmZXnth",
+      "title": "A3.3｜π0.5：开放世界泛化是如何被训练出来的",
+      "revision": 12,
+      "group": "route-a",
+      "file": "05-a3-3-π0-5-开放世界泛化是如何被训练出来的.md"
+    },
+    {
+      "token": "RQyjdSiE0oLp9mxQtrdcbVBWn4x",
+      "title": "A3.4｜π0.6* / RECAP：机器人如何从成功、失败和纠正中改进",
+      "revision": 26,
+      "group": "route-a",
+      "file": "06-a3-4-π0-6-recap-机器人如何从成功-失败和纠正中改进.md"
+    },
+    {
+      "token": "FYc9dQxyWoOlmwxaDcRcy2c0n4d",
+      "title": "A3.5｜π0.7：从通用策略到可操控的机器人基础模型",
+      "revision": 66,
+      "group": "route-a",
+      "file": "07-a3-5-π0-7-从通用策略到可操控的机器人基础模型.md"
+    },
+    {
+      "token": "LJ64dCo1pocD71xb2XvcPN9lndr",
+      "title": "A3.6｜OpenPI 实践：从数据契约到机器人闭环",
+      "revision": 8,
+      "group": "route-g",
+      "file": "02-a3-6-openpi-实践-从数据契约到机器人闭环.md"
+    },
+    {
+      "token": "FP2SdSVoLoRZusxeajbcBe8Ln2g",
+      "title": "B0｜世界模型与模型式规划：让 Physical AI 学会预测“如果这样做，会发生什么”",
+      "revision": 22,
+      "group": "route-b",
+      "file": "01-b0-世界模型与模型式规划-让-physical-ai-学会预测-如果这样做-会发生什么.md"
+    },
+    {
+      "token": "TycJdIsdCommnPx0MERctmPInth",
+      "title": "B1｜状态空间与潜在动力学：世界模型如何从观测中构造可预测状态",
+      "revision": 27,
+      "group": "route-b",
+      "file": "02-b1-状态空间与潜在动力学-世界模型如何从观测中构造可预测状态.md"
+    },
+    {
+      "token": "TeKPdruXAoYZvFx0gKHc1Po4n4d",
+      "title": "B2｜模型式规划：MPC、CEM 与轨迹优化如何把预测变成动作",
+      "revision": 20,
+      "group": "route-b",
+      "file": "03-b2-模型式规划-mpc-cem-与轨迹优化如何把预测变成动作.md"
+    },
+    {
+      "token": "YlnudfAbroxn5wxtAf8cwjSGnRh",
+      "title": "B3｜想象学习：世界模型如何训练策略与价值函数",
+      "revision": 19,
+      "group": "route-b",
+      "file": "04-b3-想象学习-世界模型如何训练策略与价值函数.md"
+    },
+    {
+      "token": "EB8ydat0YokPkqxzMrDc1vminke",
+      "title": "B4｜视频世界模型与视觉规划：生成未来画面怎样帮助机器人行动",
+      "revision": 16,
+      "group": "route-b",
+      "file": "05-b4-视频世界模型与视觉规划-生成未来画面怎样帮助机器人行动.md"
+    },
+    {
+      "token": "ENq7dECdwoOAFxxDYDxcruNBniB",
+      "title": "B5｜世界模型论文实验室：World Models、Dreamer、MuZero 与 TD-MPC2",
+      "revision": 12,
+      "group": "route-b",
+      "file": "06-b5-世界模型论文实验室-world-models-dreamer-muzero-与-td-mpc2.md"
+    },
+    {
+      "token": "IhJ3dxNiMoTluHxSHL0cYbkunTf",
+      "title": "B6｜现代具身世界模型：UniSim、Genie、V-JEPA 2、Cosmos 与动作条件视频",
+      "revision": 7,
+      "group": "route-b",
+      "file": "07-b6-现代具身世界模型-unisim-genie-v-jepa-2-cosmos-与动作条件视频.md"
+    },
+    {
+      "token": "KsX3dNJTcoG4f6xo1OpcFWaOnqg",
+      "title": "C0｜价值、奖励与经验学习：Physical AI 如何从结果中改进行为",
+      "revision": 27,
+      "group": "route-c",
+      "file": "01-c0-价值-奖励与经验学习-physical-ai-如何从结果中改进行为.md"
+    },
+    {
+      "token": "VOEVdX2b6oBy6lxXhLNcQHHenzb",
+      "title": "C1｜从 Bellman 到 Actor-Critic：策略怎样根据长期结果更新",
+      "revision": 26,
+      "group": "route-c",
+      "file": "02-c1-从-bellman-到-actor-critic-策略怎样根据长期结果更新.md"
+    },
+    {
+      "token": "GILnd1e2PoEfuSxvSLIc0Pkjn8e",
+      "title": "C2｜Offline RL：固定机器人数据怎样学习超越行为克隆的策略",
+      "revision": 23,
+      "group": "route-c",
+      "file": "03-c2-offline-rl-固定机器人数据怎样学习超越行为克隆的策略.md"
+    },
+    {
+      "token": "HsR4dPKCgotshFxxtADcCmdvnOh",
+      "title": "C3｜偏好、奖励模型与人工纠正：机器人如何利用人类反馈",
+      "revision": 9,
+      "group": "route-c",
+      "file": "04-c3-偏好-奖励模型与人工纠正-机器人如何利用人类反馈.md"
+    },
+    {
+      "token": "S5SbdMthCouZYHx9L6zcV4Wqn7f",
+      "title": "C4｜价值与经验学习论文实验室：SAC、CQL、IQL、DAgger 与 RECAP",
+      "revision": 11,
+      "group": "route-c",
+      "file": "05-c4-价值与经验学习论文实验室-sac-cql-iql-dagger-与-recap.md"
+    },
+    {
+      "token": "I2Qid6v5roo9PxxPq8hc1sYtnJe",
+      "title": "D0｜分层规划、技能与记忆：Physical AI 如何完成长时任务",
+      "revision": 17,
+      "group": "route-d",
+      "file": "01-d0-分层规划-技能与记忆-physical-ai-如何完成长时任务.md"
+    },
+    {
+      "token": "PVpkdjZk9oZtxbxBIu3cfRXKnI1",
+      "title": "01B｜物理因果与具身思维链：机器人如何从模仿走向闭环推理",
+      "revision": 26,
+      "group": "route-d",
+      "file": "02-01b-物理因果与具身思维链-机器人如何从模仿走向闭环推理.md"
+    },
+    {
+      "token": "KtQ7d4Qe9okeCqxYDTEcCCfWnkg",
+      "title": "D1｜Options、技能与层级强化学习：长时任务怎样拆成可执行单元",
+      "revision": 13,
+      "group": "route-d",
+      "file": "03-d1-options-技能与层级强化学习-长时任务怎样拆成可执行单元.md"
+    },
+    {
+      "token": "QvU1dVzgJocEwtxrQHtcgtcynff",
+      "title": "D2｜子目标规划与具身推理：语言计划怎样落到物理闭环",
+      "revision": 15,
+      "group": "route-d",
+      "file": "04-d2-子目标规划与具身推理-语言计划怎样落到物理闭环.md"
+    },
+    {
+      "token": "KS8cdR4dgoGD7Xxjgb9chsDmnsb",
+      "title": "D3｜记忆与测试时适应：机器人如何利用当前环境的新经验",
+      "revision": 11,
+      "group": "route-d",
+      "file": "05-d3-记忆与测试时适应-机器人如何利用当前环境的新经验.md"
+    },
+    {
+      "token": "YWGIdQ0k0o1QYpx5HKccQ0qmn7y",
+      "title": "D4｜分层智能论文实验室：Options、具身思维链、π0.7 与 WAM-TTT",
+      "revision": 9,
+      "group": "route-d",
+      "file": "06-d4-分层智能论文实验室-options-具身思维链-π0-7-与-wam-ttt.md"
+    },
+    {
+      "token": "G84hdPpnYoEz9MxytLYcbuJfnTe",
+      "title": "E0｜数据、表征与跨本体学习：机器人没有动作标签时学什么",
+      "revision": 24,
+      "group": "route-e",
+      "file": "01-e0-数据-表征与跨本体学习-机器人没有动作标签时学什么.md"
+    },
+    {
+      "token": "SqSddXfCaouGAqxBxBecgbWcnnH",
+      "title": "01C｜人类视频没有速度标签，机器人如何学习运动",
+      "revision": 33,
+      "group": "route-e",
+      "file": "02-01c-人类视频没有速度标签-机器人如何学习运动.md"
+    },
+    {
+      "token": "CVwYdLWxkoD20pxQU1cc6RZznPf",
+      "title": "E1｜视频运动与对象中心表征：没有动作标签时如何读取行为",
+      "revision": 15,
+      "group": "route-e",
+      "file": "03-e1-视频运动与对象中心表征-没有动作标签时如何读取行为.md"
+    },
+    {
+      "token": "M8LBdgakSosd3bxZVOPcAleWnxb",
+      "title": "E1.5｜空间状态估计与三维几何：机器人怎样知道自己和物体在哪里",
+      "revision": 7,
+      "group": "route-e",
+      "file": "04-e1-5-空间状态估计与三维几何-机器人怎样知道自己和物体在哪里.md"
+    },
+    {
+      "token": "LfjkdaRWyo0xIsxTN1Mc4ESKnCc",
+      "title": "E2｜Latent Action 与逆动力学：从状态变化发现行为变量",
+      "revision": 13,
+      "group": "route-e",
+      "file": "05-e2-latent-action-与逆动力学-从状态变化发现行为变量.md"
+    },
+    {
+      "token": "Py2TdVJRWoHY2axvOKxctnIbn9e",
+      "title": "E3｜Behavior Tokenizer：如何把连续行为变成可组合的语义单元",
+      "revision": 12,
+      "group": "route-e",
+      "file": "06-e3-behavior-tokenizer-如何把连续行为变成可组合的语义单元.md"
+    },
+    {
+      "token": "AQusdDeTZoGbBVxTCI2ch4YXntF",
+      "title": "E4｜跨本体对齐与异构共训练：不同机器人怎样共享数据",
+      "revision": 9,
+      "group": "route-e",
+      "file": "07-e4-跨本体对齐与异构共训练-不同机器人怎样共享数据.md"
+    },
+    {
+      "token": "POlLdK9aVo3tLUxLIfKceB5vnTe",
+      "title": "E5｜人类数据与跨本体论文实验室：R3M、MimicPlay、ATM、HumanPlus 与 WAM-TTT",
+      "revision": 10,
+      "group": "route-e",
+      "file": "08-e5-人类数据与跨本体论文实验室-r3m-mimicplay-atm-humanplus-与-wam-ttt.md"
+    },
+    {
+      "token": "CJwRd1wQeo6LvZx3kF1cQV9VnJh",
+      "title": "F0｜动力学、控制与物理交互：学习策略如何变成真实机器人运动",
+      "revision": 30,
+      "group": "route-f",
+      "file": "01-f0-动力学-控制与物理交互-学习策略如何变成真实机器人运动.md"
+    },
+    {
+      "token": "QHFpdL8hKogZnuxiCZycAUQ9nsg",
+      "title": "F1｜反馈控制与稳定性：从 PD、状态空间到学习策略接口",
+      "revision": 21,
+      "group": "route-f",
+      "file": "02-f1-反馈控制与稳定性-从-pd-状态空间到学习策略接口.md"
+    },
+    {
+      "token": "LptudrDBro5uIFxRZ5Ucatrdnzh",
+      "title": "F2｜接触、阻抗、力控与触觉：机器人如何学会“碰得对”",
+      "revision": 22,
+      "group": "route-f",
+      "file": "03-f2-接触-阻抗-力控与触觉-机器人如何学会-碰得对.md"
+    },
+    {
+      "token": "IaGMd85VXocgJExvnj5c2OUenNe",
+      "title": "F3｜系统辨识、延迟与 Sim-to-Real：模型怎样跨过真实世界差异",
+      "revision": 35,
+      "group": "route-f",
+      "file": "04-f3-系统辨识-延迟与-sim-to-real-模型怎样跨过真实世界差异.md"
+    },
+    {
+      "token": "FNg1dHWSRoWumrxFKygc42Xinkg",
+      "title": "F4｜人形、移动与全身控制：Physical AI 怎样驾驭有动态平衡的身体",
+      "revision": 13,
+      "group": "route-f",
+      "file": "05-f4-人形-移动与全身控制-physical-ai-怎样驾驭有动态平衡的身体.md"
+    },
+    {
+      "token": "TQP9dr7pGoHG4kxe4sbc6BtwnLd",
+      "title": "F5｜控制与学习工程论文实验室：从经典控制到 Residual RL 与 Sim-to-Real",
+      "revision": 17,
+      "group": "route-f",
+      "file": "06-f5-控制与学习工程论文实验室-从经典控制到-residual-rl-与-sim-to-real.md"
+    },
+    {
+      "token": "ZcZxdP8KMoLosExh2oocEM2Kn8d",
+      "title": "G0｜系统、可信评测与数据引擎：如何证明 Physical AI 真的有效",
+      "revision": 13,
+      "group": "route-g",
+      "file": "01-g0-系统-可信评测与数据引擎-如何证明-physical-ai-真的有效.md"
+    },
+    {
+      "token": "Rnm7dTorOolRIdxqAolcNRGgnmb",
+      "title": "G1｜统计评测与不确定性：如何证明 Physical AI 真的变好了",
+      "revision": 28,
+      "group": "route-g",
+      "file": "03-g1-统计评测与不确定性-如何证明-physical-ai-真的变好了.md"
+    },
+    {
+      "token": "SuTNdWNMEoY6KixxjJecCKbLnXt",
+      "title": "G2｜数据引擎、复现与版本：Physical AI 的训练事实如何不丢失",
+      "revision": 15,
+      "group": "route-g",
+      "file": "04-g2-数据引擎-复现与版本-physical-ai-的训练事实如何不丢失.md"
+    },
+    {
+      "token": "W3WXd4RdTo7GFIx0X7qc4y77nYG",
+      "title": "G3｜部署安全、监控与回归：模型上线后怎样保持可控",
+      "revision": 18,
+      "group": "route-g",
+      "file": "05-g3-部署安全-监控与回归-模型上线后怎样保持可控.md"
+    },
+    {
+      "token": "Qy6Bdk2VDoy3EfxKLZrcGUnLnnd",
+      "title": "G4｜OpenPI 与机器人系统工程实验室：从数据到可回滚部署",
+      "revision": 15,
+      "group": "route-g",
+      "file": "06-g4-openpi-与机器人系统工程实验室-从数据到可回滚部署.md"
+    },
+    {
+      "token": "FFTBdUHm8olEaLxYAascEUEynYN",
+      "title": "01D｜手掌骨骼线与手-物交互表示",
+      "revision": 34,
+      "group": "route-e",
+      "file": "09-01d-手掌骨骼线与手-物交互表示.md"
+    }
+  ]
+}

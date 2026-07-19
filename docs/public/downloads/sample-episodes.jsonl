@@ -1,0 +1,1 @@
+{"episode_id":"synthetic-0001","task":"move red block to target","robot":"synthetic-2d","license":"CC0-1.0","steps":[{"t":0,"timestamp":0,"action":[0.1,0.0],"observation":{"state":[0.2,0.1],"target":[0.8,0.8]},"outcome":"unknown"},{"t":1,"timestamp":0.1,"action":[0.1,0.1],"observation":{"state":[0.3,0.2],"target":[0.8,0.8]},"outcome":"success"}]}
