@@ -36,10 +36,10 @@ function clean(text, tokenToRoute, mediaRoutes = new Map()) {
     return `<MermaidDiagram encoded="${encoded}" />`;
   });
   out = out.replace(/https:\/\/archebase\.feishu\.cn\/docx\/([A-Za-z0-9]+)/g, (_, t) => tokenToRoute.get(t) || `https://archebase.feishu.cn/docx/${t}`);
-  // Markdown-it can treat a bold label ending in punctuation as an ambiguous
+  // Markdown-it can treat bold text ending in punctuation as an ambiguous
   // delimiter when CJK body text follows immediately. Keep a visible boundary
-  // so constructs such as `**适合读者：** 正文` render as strong text.
-  out = out.replace(/(\*\*[^*\n]+[：:]\*\*)(?=\S)/g, '$1 ');
+  // so `**适合读者：** 正文` and `**结论。** 正文` render as strong text.
+  out = out.replace(/(\*\*[^*\n]+\p{P}\*\*)(?=\S)/gu, '$1 ');
   out = out.replace(/\n{3,}/g, '\n\n');
   return {title: title || (out.match(/^#\s+(.+)$/m) || [])[1] || tokenToRoute.get(token)?.split('/').at(-1) || '课程', body: out.trim()};
 }
