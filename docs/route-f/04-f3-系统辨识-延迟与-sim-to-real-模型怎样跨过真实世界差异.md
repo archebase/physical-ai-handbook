@@ -2,6 +2,7 @@
 title: "F3｜系统辨识、延迟与 Sim-to-Real：模型怎样跨过真实世界差异"
 sourceToken: IaGMd85VXocgJExvnj5c2OUenNe
 sourceRevision: 35
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/IaGMd85VXocgJExvnj5c2OUenNe) · 源修订 35

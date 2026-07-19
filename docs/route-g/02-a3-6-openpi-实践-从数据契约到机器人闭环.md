@@ -2,6 +2,7 @@
 title: "A3.6｜OpenPI 实践：从数据契约到机器人闭环"
 sourceToken: LJ64dCo1pocD71xb2XvcPN9lndr
 sourceRevision: 8
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/LJ64dCo1pocD71xb2XvcPN9lndr) · 源修订 8

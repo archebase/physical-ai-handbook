@@ -2,6 +2,7 @@
 title: "D4｜分层智能论文实验室：Options、具身思维链、π0.7 与 WAM-TTT"
 sourceToken: YWGIdQ0k0o1QYpx5HKccQ0qmn7y
 sourceRevision: 9
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/YWGIdQ0k0o1QYpx5HKccQ0qmn7y) · 源修订 9

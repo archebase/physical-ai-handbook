@@ -22,11 +22,14 @@ export default defineConfig({
       {text: 'Demo 数据', link: 'https://robodata.archebase.ai'},
       {text: 'GitHub', link: 'https://github.com/archebase/physical-ai-handbook'}
     ],
-    sidebar: [{text: '课程路线', items: [{text: '总目录', link: '/guide/catalog'}]}, ...nav, {text: 'Demo 数据', items: [{text: '数据说明', link: '/data/demo-data'}]}],
+    sidebar: [{text: '课程路线', items: [{text: '总目录', link: '/guide/catalog'}]}, ...nav, {text: 'Demo 数据', items: [{text: '数据说明', link: '/data/demo-data'}]}, {text: '许可', items: [{text: 'Apache License 2.0', link: '/license'}]}],
     search: {provider: 'local'},
     outline: {level: [2, 3]},
     socialLinks: [{icon: 'github', link: 'https://github.com/archebase/physical-ai-handbook'}],
-    footer: {message: 'ArcheBase · Physical AI Handbook', copyright: 'Content source: ArcheBase Feishu course tree'}
+    footer: {
+      message: '文章正文采用 <a href="https://github.com/archebase/physical-ai-handbook/blob/main/LICENSE-CONTENT">Apache License 2.0</a>',
+      copyright: 'Copyright 2026 ArcheBase · Content source: ArcheBase Feishu course tree'
+    }
   },
   markdown: {config: (md) => md.use(mathjax3)}
 });

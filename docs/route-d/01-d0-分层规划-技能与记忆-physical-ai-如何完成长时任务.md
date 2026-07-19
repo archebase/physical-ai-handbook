@@ -2,6 +2,7 @@
 title: "D0｜分层规划、技能与记忆：Physical AI 如何完成长时任务"
 sourceToken: I2Qid6v5roo9PxxPq8hc1sYtnJe
 sourceRevision: 17
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/I2Qid6v5roo9PxxPq8hc1sYtnJe) · 源修订 17

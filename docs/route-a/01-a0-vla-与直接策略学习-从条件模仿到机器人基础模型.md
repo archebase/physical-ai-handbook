@@ -2,6 +2,7 @@
 title: "A0｜VLA 与直接策略学习：从条件模仿到机器人基础模型"
 sourceToken: Sijed32IwosrevxLEe1c7MnDnNZ
 sourceRevision: 16
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/Sijed32IwosrevxLEe1c7MnDnNZ) · 源修订 16

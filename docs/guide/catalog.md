@@ -2,6 +2,7 @@
 title: 课程目录
 sourceToken: T7dLdyp0RolnUgxQCqTcXyZZnbc
 sourceRevision: 85
+license: Apache-2.0
 ---
 
 > [飞书源目录](https://archebase.feishu.cn/docx/T7dLdyp0RolnUgxQCqTcXyZZnbc) · 源修订 85

@@ -2,6 +2,7 @@
 title: "F4｜人形、移动与全身控制：Physical AI 怎样驾驭有动态平衡的身体"
 sourceToken: FNg1dHWSRoWumrxFKygc42Xinkg
 sourceRevision: 13
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/FNg1dHWSRoWumrxFKygc42Xinkg) · 源修订 13

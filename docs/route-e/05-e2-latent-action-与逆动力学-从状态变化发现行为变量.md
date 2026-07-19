@@ -2,6 +2,7 @@
 title: "E2｜Latent Action 与逆动力学：从状态变化发现行为变量"
 sourceToken: LfjkdaRWyo0xIsxTN1Mc4ESKnCc
 sourceRevision: 13
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/LfjkdaRWyo0xIsxTN1Mc4ESKnCc) · 源修订 13

@@ -2,6 +2,7 @@
 title: "E5｜人类数据与跨本体论文实验室：R3M、MimicPlay、ATM、HumanPlus 与 WAM-TTT"
 sourceToken: POlLdK9aVo3tLUxLIfKceB5vnTe
 sourceRevision: 10
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/POlLdK9aVo3tLUxLIfKceB5vnTe) · 源修订 10

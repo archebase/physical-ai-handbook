@@ -2,6 +2,7 @@
 title: "B2｜模型式规划：MPC、CEM 与轨迹优化如何把预测变成动作"
 sourceToken: TeKPdruXAoYZvFx0gKHc1Po4n4d
 sourceRevision: 20
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/TeKPdruXAoYZvFx0gKHc1Po4n4d) · 源修订 20

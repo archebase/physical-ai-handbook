@@ -2,6 +2,7 @@
 title: "C4｜价值与经验学习论文实验室：SAC、CQL、IQL、DAgger 与 RECAP"
 sourceToken: S5SbdMthCouZYHx9L6zcV4Wqn7f
 sourceRevision: 11
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/S5SbdMthCouZYHx9L6zcV4Wqn7f) · 源修订 11

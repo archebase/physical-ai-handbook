@@ -2,6 +2,7 @@
 title: "D1｜Options、技能与层级强化学习：长时任务怎样拆成可执行单元"
 sourceToken: KtQ7d4Qe9okeCqxYDTEcCCfWnkg
 sourceRevision: 13
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/KtQ7d4Qe9okeCqxYDTEcCCfWnkg) · 源修订 13

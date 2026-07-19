@@ -2,6 +2,7 @@
 title: "G1｜统计评测与不确定性：如何证明 Physical AI 真的变好了"
 sourceToken: Rnm7dTorOolRIdxqAolcNRGgnmb
 sourceRevision: 28
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/Rnm7dTorOolRIdxqAolcNRGgnmb) · 源修订 28

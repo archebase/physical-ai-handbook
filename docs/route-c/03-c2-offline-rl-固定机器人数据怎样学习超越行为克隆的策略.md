@@ -2,6 +2,7 @@
 title: "C2｜Offline RL：固定机器人数据怎样学习超越行为克隆的策略"
 sourceToken: GILnd1e2PoEfuSxvSLIc0Pkjn8e
 sourceRevision: 23
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/GILnd1e2PoEfuSxvSLIc0Pkjn8e) · 源修订 23

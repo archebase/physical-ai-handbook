@@ -2,6 +2,7 @@
 title: "A2｜主流 VLA 谱系：RT、Open X、Octo、OpenVLA、GR00T 与 Gemini Robotics"
 sourceToken: Bgevdu3QuoIedrxrIaPcKv1Nn7b
 sourceRevision: 9
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/Bgevdu3QuoIedrxrIaPcKv1Nn7b) · 源修订 9

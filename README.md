@@ -28,4 +28,6 @@ npm run dev
 
 ## 许可
 
-课程正文和代码的最终许可需要 ArcheBase 确认后填写。Demo 数据必须单独声明许可，不因代码仓库公开而自动获得可再分发权或生产使用权。
+除另有注明的第三方引用和素材外，本电子书所有课程文章正文均采用 [Apache License 2.0](LICENSE-CONTENT) 发布，Copyright 2026 ArcheBase。
+
+该许可不自动适用于 ArcheBase Logo、商标、第三方图片与引用内容。Demo 数据按其自身记录的许可使用；当前合成样例声明为 `CC0-1.0`。

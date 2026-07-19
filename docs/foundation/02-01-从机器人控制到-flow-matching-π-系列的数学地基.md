@@ -2,6 +2,7 @@
 title: "01｜从机器人控制到 Flow Matching：π 系列的数学地基"
 sourceToken: KV1rdMZd5o9rufxEtV0cnxL8nWe
 sourceRevision: 77
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/KV1rdMZd5o9rufxEtV0cnxL8nWe) · 源修订 77

@@ -2,6 +2,7 @@
 title: "F5｜控制与学习工程论文实验室：从经典控制到 Residual RL 与 Sim-to-Real"
 sourceToken: TQP9dr7pGoHG4kxe4sbc6BtwnLd
 sourceRevision: 17
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/TQP9dr7pGoHG4kxe4sbc6BtwnLd) · 源修订 17

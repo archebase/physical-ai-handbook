@@ -104,13 +104,13 @@ for (const group of groups) {
   const dir = path.join(docsRoot, group.id); fs.mkdirSync(dir, {recursive: true});
   for (const record of groupRecords) {
     const converted = clean(record.raw, tokenToRoute, mediaRoutes);
-    fs.writeFileSync(path.join(dir, record.file), `---\ntitle: ${JSON.stringify(converted.title)}\nsourceToken: ${record.token}\nsourceRevision: ${record.revision}\n---\n\n> [飞书原文](https://archebase.feishu.cn/docx/${record.token}) · 源修订 ${record.revision}\n\n${converted.body}\n`, 'utf8');
+    fs.writeFileSync(path.join(dir, record.file), `---\ntitle: ${JSON.stringify(converted.title)}\nsourceToken: ${record.token}\nsourceRevision: ${record.revision}\nlicense: Apache-2.0\n---\n\n> [飞书原文](https://archebase.feishu.cn/docx/${record.token}) · 源修订 ${record.revision}\n\n${converted.body}\n`, 'utf8');
   }
   nav.push({text: group.title, items: groupRecords.map((r) => ({text: r.title, link: tokenToRoute.get(r.token)}))});
 }
 const catalogConverted = clean(catalog.content, tokenToRoute, mediaRoutes);
 fs.mkdirSync(path.join(docsRoot, 'guide'), {recursive: true});
-fs.writeFileSync(path.join(docsRoot, 'guide/catalog.md'), `---\ntitle: 课程目录\nsourceToken: ${source}\nsourceRevision: ${catalog.revision}\n---\n\n> [飞书源目录](https://archebase.feishu.cn/docx/${source}) · 源修订 ${catalog.revision}\n\n${catalogConverted.body}\n`, 'utf8');
+fs.writeFileSync(path.join(docsRoot, 'guide/catalog.md'), `---\ntitle: 课程目录\nsourceToken: ${source}\nsourceRevision: ${catalog.revision}\nlicense: Apache-2.0\n---\n\n> [飞书源目录](https://archebase.feishu.cn/docx/${source}) · 源修订 ${catalog.revision}\n\n${catalogConverted.body}\n`, 'utf8');
 fs.mkdirSync(path.join(docsRoot, '.vitepress'), {recursive: true});
 fs.writeFileSync(path.join(docsRoot, '.vitepress/generated-nav.json'), JSON.stringify(nav, null, 2) + '\n', 'utf8');
 fs.writeFileSync(path.join(docsRoot, 'guide/sync-manifest.json'), JSON.stringify({source, revision: catalog.revision, syncedAt: new Date().toISOString(), documents: records.map(({raw, ...record}) => record)}, null, 2) + '\n', 'utf8');

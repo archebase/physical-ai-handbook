@@ -2,6 +2,7 @@
 title: "C1｜从 Bellman 到 Actor-Critic：策略怎样根据长期结果更新"
 sourceToken: VOEVdX2b6oBy6lxXhLNcQHHenzb
 sourceRevision: 26
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/VOEVdX2b6oBy6lxXhLNcQHHenzb) · 源修订 26

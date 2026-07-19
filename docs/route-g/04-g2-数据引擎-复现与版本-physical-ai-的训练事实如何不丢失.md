@@ -2,6 +2,7 @@
 title: "G2｜数据引擎、复现与版本：Physical AI 的训练事实如何不丢失"
 sourceToken: SuTNdWNMEoY6KixxjJecCKbLnXt
 sourceRevision: 15
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/SuTNdWNMEoY6KixxjJecCKbLnXt) · 源修订 15

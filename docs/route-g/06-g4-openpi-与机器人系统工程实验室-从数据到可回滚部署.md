@@ -2,6 +2,7 @@
 title: "G4｜OpenPI 与机器人系统工程实验室：从数据到可回滚部署"
 sourceToken: Qy6Bdk2VDoy3EfxKLZrcGUnLnnd
 sourceRevision: 15
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/Qy6Bdk2VDoy3EfxKLZrcGUnLnnd) · 源修订 15

@@ -2,6 +2,7 @@
 title: "C0｜价值、奖励与经验学习：Physical AI 如何从结果中改进行为"
 sourceToken: KsX3dNJTcoG4f6xo1OpcFWaOnqg
 sourceRevision: 27
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/KsX3dNJTcoG4f6xo1OpcFWaOnqg) · 源修订 27

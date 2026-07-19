@@ -2,6 +2,7 @@
 title: "00｜Physical AI 公共地基：智能体究竟在学习什么"
 sourceToken: UgwUdtz3do3Gp3xNupPcuQFunSh
 sourceRevision: 32
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/UgwUdtz3do3Gp3xNupPcuQFunSh) · 源修订 32

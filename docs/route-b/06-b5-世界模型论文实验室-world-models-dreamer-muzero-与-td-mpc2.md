@@ -2,6 +2,7 @@
 title: "B5｜世界模型论文实验室：World Models、Dreamer、MuZero 与 TD-MPC2"
 sourceToken: ENq7dECdwoOAFxxDYDxcruNBniB
 sourceRevision: 12
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/ENq7dECdwoOAFxxDYDxcruNBniB) · 源修订 12

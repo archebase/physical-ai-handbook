@@ -2,6 +2,7 @@
 title: "B0｜世界模型与模型式规划：让 Physical AI 学会预测“如果这样做，会发生什么”"
 sourceToken: FP2SdSVoLoRZusxeajbcBe8Ln2g
 sourceRevision: 22
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/FP2SdSVoLoRZusxeajbcBe8Ln2g) · 源修订 22

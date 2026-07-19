@@ -2,6 +2,7 @@
 title: "B6｜现代具身世界模型：UniSim、Genie、V-JEPA 2、Cosmos 与动作条件视频"
 sourceToken: IhJ3dxNiMoTluHxSHL0cYbkunTf
 sourceRevision: 7
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/IhJ3dxNiMoTluHxSHL0cYbkunTf) · 源修订 7

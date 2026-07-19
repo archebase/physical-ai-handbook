@@ -2,6 +2,7 @@
 title: "E3｜Behavior Tokenizer：如何把连续行为变成可组合的语义单元"
 sourceToken: Py2TdVJRWoHY2axvOKxctnIbn9e
 sourceRevision: 12
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/Py2TdVJRWoHY2axvOKxctnIbn9e) · 源修订 12

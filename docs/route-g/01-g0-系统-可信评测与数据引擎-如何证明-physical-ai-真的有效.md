@@ -2,6 +2,7 @@
 title: "G0｜系统、可信评测与数据引擎：如何证明 Physical AI 真的有效"
 sourceToken: ZcZxdP8KMoLosExh2oocEM2Kn8d
 sourceRevision: 13
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/ZcZxdP8KMoLosExh2oocEM2Kn8d) · 源修订 13

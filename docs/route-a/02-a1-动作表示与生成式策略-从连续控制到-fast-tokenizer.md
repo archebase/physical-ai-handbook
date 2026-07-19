@@ -2,6 +2,7 @@
 title: "A1｜动作表示与生成式策略：从连续控制到 FAST Tokenizer"
 sourceToken: Oes8d8LFno763NxcWFucK7kMnZy
 sourceRevision: 23
+license: Apache-2.0
 ---
 
 > [飞书原文](https://archebase.feishu.cn/docx/Oes8d8LFno763NxcWFucK7kMnZy) · 源修订 23
