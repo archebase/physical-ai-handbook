@@ -10,7 +10,12 @@ export default defineConfig({
   srcDir: '.',
   base: process.env.VITEPRESS_BASE || '/',
   themeConfig: {
-    siteTitle: 'ArcheBase · Physical AI Handbook',
+    logo: {
+      light: '/brand/archebase-logo-black-h.png',
+      dark: '/brand/archebase-logo-white-h.png',
+      alt: 'ArcheBase 智域基石'
+    },
+    siteTitle: false,
     nav: [
       {text: '课程目录', link: '/guide/catalog'},
       {text: '飞书源目录', link: 'https://archebase.feishu.cn/docx/T7dLdyp0RolnUgxQCqTcXyZZnbc'},
