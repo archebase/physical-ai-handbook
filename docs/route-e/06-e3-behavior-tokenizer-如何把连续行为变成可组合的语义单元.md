@@ -7,7 +7,7 @@ sourceRevision: 12
 > [飞书原文](https://archebase.feishu.cn/docx/Py2TdVJRWoHY2axvOKxctnIbn9e) · 源修订 12
 
 ::: tip 💡
-**机制课：**动作 Tokenizer 压缩机器人控制，Behavior Tokenizer 还希望统一人类视频、事件、技能与跨本体行为。本课讨论 token 的层级、训练目标、codebook、事件边界和机器人解码。
+**机制课：** 动作 Tokenizer 压缩机器人控制，Behavior Tokenizer 还希望统一人类视频、事件、技能与跨本体行为。本课讨论 token 的层级、训练目标、codebook、事件边界和机器人解码。
 :::
 
 # 学习目标
@@ -20,17 +20,17 @@ sourceRevision: 12
 
 $$y_{1:M}=T(\tau)$$
 
-> **读法：**Tokenizer T 把连续行为轨迹 tau 编码为长度 M 的 token 序列。
+> **读法：** Tokenizer T 把连续行为轨迹 tau 编码为长度 M 的 token 序列。
 
-**推导：**长轨迹包含高频动作、事件边界和任务结构。编码器用更短序列压缩这些信息；压缩是否有用不能只看长度，还要看 token 能否预测、组合并被机器人解码。
+**推导：** 长轨迹包含高频动作、事件边界和任务结构。编码器用更短序列压缩这些信息；压缩是否有用不能只看长度，还要看 token 能否预测、组合并被机器人解码。
 
 解码：
 
 $$\hat\tau=D(y_{1:M},e)$$
 
-> **读法：**解码器 D 根据 token 序列和本体标识 e，重建该本体上的行为轨迹。
+> **读法：** 解码器 D 根据 token 序列和本体标识 e，重建该本体上的行为轨迹。
 
-**推导：**共享 token 应表达功能或事件，而不同机器人用不同动作空间实现同一功能。把 e 放入解码器，可以让高层词表共享、低层控制保持本体特异。
+**推导：** 共享 token 应表达功能或事件，而不同机器人用不同动作空间实现同一功能。把 e 放入解码器，可以让高层词表共享、低层控制保持本体特异。
 
 $e$ 表示本体。Tokenizer 需要压缩、预测和重建，同时保留任务、事件和控制信息。
 
@@ -53,17 +53,17 @@ $e$ 表示本体。Tokenizer 需要压缩、预测和重建，同时保留任务
 
 $$k^*=\arg\min_k\lVert h-e_k\rVert_2^2$$
 
-> **读法：**选择与连续编码 h 欧氏距离最近的 codebook 向量，其编号记为 k star。
+> **读法：** 选择与连续编码 h 欧氏距离最近的 codebook 向量，其编号记为 k star。
 
-**推导：**向量量化用最近邻把连续空间划分为离散 Voronoi 区域。编码 h 落在哪个区域，就输出对应 token；距离度量和编码尺度会直接决定分区语义。
+**推导：** 向量量化用最近邻把连续空间划分为离散 Voronoi 区域。编码 h 落在哪个区域，就输出对应 token；距离度量和编码尺度会直接决定分区语义。
 
 VQ-VAE 目标包含重建、codebook 和 commitment：
 
 $$\mathcal L=\mathcal L_{\mathrm{recon}}+\lVert\operatorname{sg}[h]-e_{k^*}\rVert_2^2+\beta\lVert h-\operatorname{sg}[e_{k^*}]\rVert_2^2$$
 
-> **读法：**VQ 损失由重建项、把最近 code 拉向编码的 codebook 项，以及让编码承诺靠近所选 code 的 commitment 项组成。
+> **读法：** VQ 损失由重建项、把最近 code 拉向编码的 codebook 项，以及让编码承诺靠近所选 code 的 commitment 项组成。
 
-**推导：**第二项对 h 停梯度，只更新 e\_{k^\*}；第三项对 code 停梯度，只推动 encoder 输出靠近该 code。重建项保证 token 保留轨迹信息，beta 控制 encoder 不在 code 边界间频繁跳动。
+**推导：** 第二项对 h 停梯度，只更新 e\_{k^\*}；第三项对 code 停梯度，只推动 encoder 输出靠近该 code。重建项保证 token 保留轨迹信息，beta 控制 encoder 不在 code 边界间频繁跳动。
 
 $sg$ 表示 stop-gradient。
 
@@ -94,9 +94,9 @@ $sg$ 表示 stop-gradient。
 
 $$\mathcal L=\lambda_r\mathcal L_{\mathrm{recon}}+\lambda_p\mathcal L_{\mathrm{predict}}+\lambda_c\mathcal L_{\mathrm{contrast}}+\lambda_e\mathcal L_{\mathrm{event}}+\lambda_a\mathcal L_{\mathrm{align}}$$
 
-> **读法：**总损失把重建、预测、对比、事件边界和跨本体对齐五类目标加权相加。
+> **读法：** 总损失把重建、预测、对比、事件边界和跨本体对齐五类目标加权相加。
 
-**推导：**重建保存细节，预测要求 token 对未来有用，对比目标组织语义邻域，事件目标塑造时间边界，对齐目标连接人类与机器人。各 lambda 必须通过下游任务和梯度尺度平衡，不能只优化某一离线指标。
+**推导：** 重建保存细节，预测要求 token 对未来有用，对比目标组织语义邻域，事件目标塑造时间边界，对齐目标连接人类与机器人。各 lambda 必须通过下游任务和梯度尺度平衡，不能只优化某一离线指标。
 
 - 预测下一 token 或未来状态。
 - 跨视角相同事件一致。
@@ -110,9 +110,9 @@ $$\mathcal L=\lambda_r\mathcal L_{\mathrm{recon}}+\lambda_p\mathcal L_{\mathrm{p
 
 $$p_\omega(a_t^{(e)}\mid y_k,o_t^{(e)},e)$$
 
-> **读法：**本体条件解码器根据共享行为 token、当前本体观测和本体标识，对该机器人的动作建模。
+> **读法：** 本体条件解码器根据共享行为 token、当前本体观测和本体标识，对该机器人的动作建模。
 
-**推导：**同一 token 在不同身体上对应不同关节命令，因此解码必须读取本体状态。固定 token、替换 e 并在留出机器人上训练少量 adapter，可检验词表是否真的共享功能语义。
+**推导：** 同一 token 在不同身体上对应不同关节命令，因此解码必须读取本体状态。固定 token、替换 e 并在留出机器人上训练少量 adapter，可检验词表是否真的共享功能语义。
 
 若共享词表只靠 BPE 统计共现，可能共享字符串而非行为语义。必须做跨本体检索和闭环解码。
 
