@@ -21,8 +21,8 @@ npm run dev
 ### Demo 数据与社区入口
 
 - Demo 数据：[robodata.archebase.ai](https://robodata.archebase.ai)
-- 飞书交流群：**链接待补**（替换为飞书群邀请链接）
-- 数据申请 / 合作表单：**链接待补**（替换为申请表单链接）
+- 飞书交流群（仅限 ArcheBase 企业内部成员）：[加入群聊](https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=5acga295-8b98-476b-83a9-c07cb2453cea&qr_code=true)
+- 数据申请 / 合作表单：[填写申请表](https://archebase.feishu.cn/share/base/shrcnsMcwWICUVdNeutlRWhqyD5)
 
 `robodata.archebase.ai` 用于提供可公开体验的 Demo 数据，不是本电子书的部署域名。GitHub 仓库中的样例仅用于格式演示、解析测试和教学验证。
 

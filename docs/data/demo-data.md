@@ -6,7 +6,7 @@
 
 - Demo 数据站点：[robodata.archebase.ai](https://robodata.archebase.ai)
 - 仓库内合成样例：`docs/public/downloads/sample-episodes.jsonl`
-- 数据申请 / 合作表单：**链接待补**
+- 数据申请 / 合作表单：[填写申请表](https://archebase.feishu.cn/share/base/shrcnsMcwWICUVdNeutlRWhqyD5)
 
 ## GitHub 仓库包含什么
 
