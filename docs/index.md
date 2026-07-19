@@ -10,7 +10,7 @@ hero:
       link: /guide/catalog
     - theme: alt
       text: Demo 数据
-      link: /data/demo-data
+      link: https://robodata.archebase.ai
 features:
   - title: 从对象出发
     details: 区分策略、世界模型、价值、规划、控制和数据引擎，避免被模型名称牵着走。
