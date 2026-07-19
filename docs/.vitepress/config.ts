@@ -14,10 +14,10 @@ export default defineConfig({
     nav: [
       {text: '课程目录', link: '/guide/catalog'},
       {text: '飞书源目录', link: 'https://archebase.feishu.cn/docx/T7dLdyp0RolnUgxQCqTcXyZZnbc'},
-      {text: '免费数据', link: '/data/open-data-plan'},
+      {text: 'Demo 数据', link: '/data/demo-data'},
       {text: 'GitHub', link: 'https://github.com/archebase/physical-ai-handbook'}
     ],
-    sidebar: [{text: '课程路线', items: [{text: '总目录', link: '/guide/catalog'}]}, ...nav, {text: '开放数据', items: [{text: '开放计划', link: '/data/open-data-plan'}]}],
+    sidebar: [{text: '课程路线', items: [{text: '总目录', link: '/guide/catalog'}]}, ...nav, {text: 'Demo 数据', items: [{text: '数据说明', link: '/data/demo-data'}]}],
     search: {provider: 'local'},
     outline: {level: [2, 3]},
     socialLinks: [{icon: 'github', link: 'https://github.com/archebase/physical-ai-handbook'}],

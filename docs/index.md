@@ -9,15 +9,15 @@ hero:
       text: 开始阅读
       link: /guide/catalog
     - theme: alt
-      text: 免费数据计划
-      link: /data/open-data-plan
+      text: Demo 数据
+      link: /data/demo-data
 features:
   - title: 从对象出发
     details: 区分策略、世界模型、价值、规划、控制和数据引擎，避免被模型名称牵着走。
   - title: 公式必须能读
     details: 每个关键公式都配读法、推导和机器人闭环含义，并尽量提供最小可复现实验。
   - title: 证据进入系统
-    details: 课程正文、论文坐标、评测协议和免费数据 Schema 分开管理，版本可追溯。
+    details: 课程正文、论文坐标、评测协议和 Demo 数据 Schema 分开管理，版本可追溯。
 ---
 
 ## 这不是一条线性课程
