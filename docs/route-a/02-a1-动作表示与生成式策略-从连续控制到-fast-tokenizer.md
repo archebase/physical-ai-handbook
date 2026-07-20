@@ -1,11 +1,11 @@
 ---
 title: "A1｜动作表示与生成式策略：从连续控制到 FAST Tokenizer"
 sourceToken: Oes8d8LFno763NxcWFucK7kMnZy
-sourceRevision: 23
+sourceRevision: 24
 license: Apache-2.0
 ---
 
-> [飞书原文](https://archebase.feishu.cn/docx/Oes8d8LFno763NxcWFucK7kMnZy) · 源修订 23
+> [飞书原文](https://archebase.feishu.cn/docx/Oes8d8LFno763NxcWFucK7kMnZy) · 源修订 24
 
 ::: tip 💡
 **课程定位：** 本章研究“动作应当用什么随机变量表示”。FAST 是重要案例，但不是全部答案。读者将比较单点回归、自回归 token、Diffusion 和 Flow Matching，理解表示方式如何决定损失函数、推理速度、多峰表达与跨机器人迁移。
@@ -43,6 +43,10 @@ $$X_k=\sum_{n=0}^{H-1}x_n\cos\left[\frac{\pi}{H}\left(n+\frac12\right)k\right]$$
 **推导：** DCT-II 把时间序列投影到不同频率的余弦基上。不同实现会在正变换或逆变换中加入归一化系数；只要编码和解码使用同一约定，重建关系不变。
 
 低频 X_k 描述整体方向和速度，高频系数描述快速变化。机器人动作通常具有时间平滑性，因此比直接逐点量化更可压缩。
+
+### 公式可视化｜DCT 如何把时间轨迹投影到频率基
+
+![课程画板](/media/Xxhuw9Vmvh543ib4vtycKOoPnRc.jpg)
 
 # 3. 四种动作分布参数化路线
 

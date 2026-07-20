@@ -1,7 +1,7 @@
 {
   "source": "T7dLdyp0RolnUgxQCqTcXyZZnbc",
   "revision": 85,
-  "syncedAt": "2026-07-19T13:56:40.696Z",
+  "syncedAt": "2026-07-20T00:20:06.450Z",
   "documents": [
     {
       "token": "UgwUdtz3do3Gp3xNupPcuQFunSh",
@@ -27,7 +27,7 @@
     {
       "token": "Oes8d8LFno763NxcWFucK7kMnZy",
       "title": "A1｜动作表示与生成式策略：从连续控制到 FAST Tokenizer",
-      "revision": 23,
+      "revision": 24,
       "group": "route-a",
       "file": "02-a1-动作表示与生成式策略-从连续控制到-fast-tokenizer.md"
     },
@@ -55,7 +55,7 @@
     {
       "token": "RQyjdSiE0oLp9mxQtrdcbVBWn4x",
       "title": "A3.4｜π0.6* / RECAP：机器人如何从成功、失败和纠正中改进",
-      "revision": 26,
+      "revision": 27,
       "group": "route-a",
       "file": "06-a3-4-π0-6-recap-机器人如何从成功-失败和纠正中改进.md"
     },
@@ -83,7 +83,7 @@
     {
       "token": "TycJdIsdCommnPx0MERctmPInth",
       "title": "B1｜状态空间与潜在动力学：世界模型如何从观测中构造可预测状态",
-      "revision": 27,
+      "revision": 28,
       "group": "route-b",
       "file": "02-b1-状态空间与潜在动力学-世界模型如何从观测中构造可预测状态.md"
     },
@@ -97,7 +97,7 @@
     {
       "token": "YlnudfAbroxn5wxtAf8cwjSGnRh",
       "title": "B3｜想象学习：世界模型如何训练策略与价值函数",
-      "revision": 19,
+      "revision": 20,
       "group": "route-b",
       "file": "04-b3-想象学习-世界模型如何训练策略与价值函数.md"
     },
@@ -188,7 +188,7 @@
     {
       "token": "KS8cdR4dgoGD7Xxjgb9chsDmnsb",
       "title": "D3｜记忆与测试时适应：机器人如何利用当前环境的新经验",
-      "revision": 11,
+      "revision": 12,
       "group": "route-d",
       "file": "05-d3-记忆与测试时适应-机器人如何利用当前环境的新经验.md"
     },
@@ -209,7 +209,7 @@
     {
       "token": "SqSddXfCaouGAqxBxBecgbWcnnH",
       "title": "01C｜人类视频没有速度标签，机器人如何学习运动",
-      "revision": 33,
+      "revision": 34,
       "group": "route-e",
       "file": "02-01c-人类视频没有速度标签-机器人如何学习运动.md"
     },
@@ -223,7 +223,7 @@
     {
       "token": "M8LBdgakSosd3bxZVOPcAleWnxb",
       "title": "E1.5｜空间状态估计与三维几何：机器人怎样知道自己和物体在哪里",
-      "revision": 7,
+      "revision": 8,
       "group": "route-e",
       "file": "04-e1-5-空间状态估计与三维几何-机器人怎样知道自己和物体在哪里.md"
     },
@@ -272,7 +272,7 @@
     {
       "token": "LptudrDBro5uIFxRZ5Ucatrdnzh",
       "title": "F2｜接触、阻抗、力控与触觉：机器人如何学会“碰得对”",
-      "revision": 22,
+      "revision": 23,
       "group": "route-f",
       "file": "03-f2-接触-阻抗-力控与触觉-机器人如何学会-碰得对.md"
     },
@@ -286,7 +286,7 @@
     {
       "token": "FNg1dHWSRoWumrxFKygc42Xinkg",
       "title": "F4｜人形、移动与全身控制：Physical AI 怎样驾驭有动态平衡的身体",
-      "revision": 13,
+      "revision": 14,
       "group": "route-f",
       "file": "05-f4-人形-移动与全身控制-physical-ai-怎样驾驭有动态平衡的身体.md"
     },
@@ -307,7 +307,7 @@
     {
       "token": "Rnm7dTorOolRIdxqAolcNRGgnmb",
       "title": "G1｜统计评测与不确定性：如何证明 Physical AI 真的变好了",
-      "revision": 28,
+      "revision": 29,
       "group": "route-g",
       "file": "03-g1-统计评测与不确定性-如何证明-physical-ai-真的变好了.md"
     },

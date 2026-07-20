@@ -1,11 +1,11 @@
 ---
 title: "F4｜人形、移动与全身控制：Physical AI 怎样驾驭有动态平衡的身体"
 sourceToken: FNg1dHWSRoWumrxFKygc42Xinkg
-sourceRevision: 13
+sourceRevision: 14
 license: Apache-2.0
 ---
 
-> [飞书原文](https://archebase.feishu.cn/docx/FNg1dHWSRoWumrxFKygc42Xinkg) · 源修订 13
+> [飞书原文](https://archebase.feishu.cn/docx/FNg1dHWSRoWumrxFKygc42Xinkg) · 源修订 14
 
 ::: tip 💡
 **机制课：** 机械臂通常固定在基座上，人形和移动机器人必须同时处理平衡、落脚、碰撞、接触切换和全身协调。高层 VLA 不能直接替代千赫兹级的全身控制。
@@ -58,6 +58,10 @@ $$\xi=c_{xy}+\frac{\dot c_{xy}}{\omega_0},\qquad \omega_0=\sqrt{\frac{g}{c_z}}$$
 > **读法：** 捕获点等于当前质心水平位置，加上质心水平速度除以倒立摆自然频率；自然频率由重力与质心高度决定。
 
 **推导：** 固定高度线性倒立摆的水平动力学可分成收敛模态与发散模态。把位置与速度组合成 xi 后，xi 表示若把支撑点放在那里，可使发散模态被停止的理想位置。真实机器人还受步长、摩擦、摆腿时间和角动量限制，因此它是落脚启发，不是无条件可达点。
+
+### 公式可视化｜ZMP、捕获点与下一步落脚
+
+![课程画板](/media/EoBZwALnyhpNvhb2hCVcNpTjnFf.jpg)
 
 这两个指标的价值是把全身平衡压缩成可解释的低维量；它们的风险是让人忘记假设。快速上身摆动、手部支撑、可变质心高度和强接触冲击都要求回到完整质心动量或全身动力学。
 

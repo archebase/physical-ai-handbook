@@ -1,11 +1,11 @@
 ---
 title: "G1｜统计评测与不确定性：如何证明 Physical AI 真的变好了"
 sourceToken: Rnm7dTorOolRIdxqAolcNRGgnmb
-sourceRevision: 28
+sourceRevision: 29
 license: Apache-2.0
 ---
 
-> [飞书原文](https://archebase.feishu.cn/docx/Rnm7dTorOolRIdxqAolcNRGgnmb) · 源修订 28
+> [飞书原文](https://archebase.feishu.cn/docx/Rnm7dTorOolRIdxqAolcNRGgnmb) · 源修订 29
 
 ::: tip 💡
 **机制课：** “成功率从 70% 提升到 80%”不是结论，除非说明试验单位、样本量、任务分层、随机种子、置信区间、失败代价和选择过程。本课把机器人评测还原成统计推断问题。
@@ -164,6 +164,10 @@ $$\operatorname{risk}(\tau)=P(Y=0\mid c\ge\tau)$$
 **推导：** 先用 c 大于等于 tau 筛选接受集合，再在该集合内计算失败均值。随着阈值升高，系统放弃更多低置信试验，风险通常下降，但若置信度未校准或存在分布漂移，风险不一定单调改善。
 
 画风险-覆盖曲线能回答：“为了把失败率降到 2%，需要放弃多少自主执行比例？”这比单一 AUROC 更接近部署决策。
+
+### 公式可视化｜置信阈值如何改变风险与覆盖
+
+![课程画板](/media/GHiswu42FhUtk2bt0hlcPB5Qnid.jpg)
 
 # 10. 最小可视化实验
 
