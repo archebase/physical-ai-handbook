@@ -1,11 +1,11 @@
 ---
 title: "B6｜现代具身世界模型：UniSim、Genie、V-JEPA 2、Cosmos 与动作条件视频"
 sourceToken: IhJ3dxNiMoTluHxSHL0cYbkunTf
-sourceRevision: 7
+sourceRevision: 13
 license: Apache-2.0
 ---
 
-> [飞书原文](https://archebase.feishu.cn/docx/IhJ3dxNiMoTluHxSHL0cYbkunTf) · 源修订 7
+> [飞书原文](https://archebase.feishu.cn/docx/IhJ3dxNiMoTluHxSHL0cYbkunTf) · 源修订 13
 
 ::: tip 💡
 **前沿论文课：** 能生成逼真视频，不等于学会了可用于机器人控制的世界模型。本课用“状态、动作、可控性、时间一致性与规划收益”五个标准评审现代视频世界模型。
@@ -13,7 +13,7 @@ license: Apache-2.0
 
 # 学习目标
 
-完成本课后，应能区分视频生成模型、交互环境模型、潜在动力学和控制世界模型；解释 UniSim、Genie、V-JEPA 2、Cosmos 与动作条件机器人视频模型的技术位置；设计检验模型是否真的理解动作后果的干预实验。
+完成本课后，应能区分视频生成模型、交互环境模型、潜在动力学、World Action Model 与控制世界模型；解释 UniSim、Genie、V-JEPA 2、Cosmos、WAM4D 与 X-WAM 的技术位置；设计检验模型是否真的理解动作后果、三维几何和接触约束的干预实验。
 
 # 1. 世界模型必须对动作敏感
 
@@ -82,6 +82,16 @@ $$\hat G(a_{t:t+H-1})=\sum_{k=0}^{H-1}\gamma^k\hat r(\hat z_{t+k},a_{t+k})+\gamm
 
 **推导：** 这是有限时域回报定义。世界模型产生未来潜在状态，奖励和价值模型把状态转成决策分数，规划器比较多条候选序列。
 
+## 9.1 4D World Action Model：把时变三维几何引入动作生成
+
+World Action Model（WAM）尝试在同一模型中联合建模未来观测与可执行动作。4D-WAM 进一步要求模型表示随时间变化的三维结构，例如多视角 RGB-D、未来深度、对象几何与运动。这里的“4D”是三维空间加时间，不等于模型已经掌握力、摩擦、顺应性或完整接触动力学。
+
+**WAM4D。** 该方法用 spatial register tokens 在训练期读取未来深度，把几何基础模型的空间先验蒸馏进因果视频—动作 Transformer；动作推理时移除几何读取分支，以减少稠密 4D 解码带来的延迟。其关键证据不是深度图更漂亮，而是在保持推理效率时，空间一致性和机器人动作预测是否同步改善。
+
+**X-WAM。** 该方法联合生成多视角 RGB-D 未来与机器人动作，并用异步噪声采样让动作以较少去噪步数快速输出，而视觉与几何分支继续完成高保真生成。它代表“统一世界生成与实时动作执行”的路线，但仍需区分动作成功来自更好的空间表征、更多预训练数据，还是生成与动作分支的联合优化。
+
+**课程判断。** 4D 几何能缓解单目遮挡、尺度歧义和空间穿透，却不能自动解决接触力、摩擦锥、执行器延迟与本体差异。评测至少应同时报告未来深度/三维运动误差、接触事件误差、动作推理延迟和真实闭环成功率，并对移除几何监督、打乱深度以及固定控制数据量做消融。
+
 # 10. 论文事实与证据边界
 
 | 路线 | 公开事实 | 作者解释 | 课程判断 |
@@ -90,6 +100,8 @@ $$\hat G(a_{t:t+H-1})=\sum_{k=0}^{H-1}\gamma^k\hat r(\hat z_{t+k},a_{t+k})+\gamm
 | Genie / Genie 2 | 从视频学习潜在动作或可交互生成环境，强调大规模世界生成能力 | 没有显式动作标签的视频也包含可控制结构 | 潜在动作仍需与机器人本体和控制频率 grounding，不能直接等同于机器人动作 |
 | V-JEPA 2 | 通过视频自监督表征与动作条件模型连接预测和机器人规划 | 表示空间预测可跳过不必要的像素生成 | 应固定机器人控制数据量，检验预训练是否真正提高动作后果预测和真实任务成功率 |
 | Cosmos | 提供面向 Physical AI 的世界生成模型、数据处理与可定制基础设施 | 世界基础模型可以支持合成数据、仿真和下游 Physical AI 开发 | 它是平台路线而非单一控制算法；合成数据必须用真实闭环收益和偏差审计证明价值 |
+| WAM4D | 用训练期 spatial register tokens 引入未来深度监督，并在动作推理时移除几何读取分支 | 可把预训练几何先验注入因果视频—动作模型，同时避免稠密 4D 解码拖慢控制 | 需证明几何监督在固定数据和计算预算下改善真实闭环，而不只是改善深度或仿真指标 |
+| X-WAM | 联合预测多视角 RGB-D 未来与机器人动作，并用异步去噪平衡动作速度和世界生成质量 | 统一 4D 世界建模与实时动作执行可以兼顾空间理解和控制效率 | 应拆分预训练数据规模、几何分支和异步采样的贡献，并审计接触、延迟与跨本体泛化 |
 
 # 11. 失败模式：三类决定性误差
 
@@ -119,6 +131,8 @@ $$\hat G(a_{t:t+H-1})=\sum_{k=0}^{H-1}\gamma^k\hat r(\hat z_{t+k},a_{t+k})+\gamm
 
 # 14. 主要资料
 
+- [WAM4D: Fast 4D World Action Model via Spatial Register Tokens](https://arxiv.org/abs/2606.14048)
+- [X-WAM: Unified 4D World Action Modeling from Video Priors with Asynchronous Denoising](https://arxiv.org/abs/2604.26694)
 - [UniSim](https://universal-simulator.github.io/unisim/)
 - [Genie](https://sites.google.com/view/genie-2024/)
 - [Genie 2](https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/)

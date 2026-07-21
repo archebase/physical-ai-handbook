@@ -1,11 +1,11 @@
 ---
 title: "F4｜人形、移动与全身控制：Physical AI 怎样驾驭有动态平衡的身体"
 sourceToken: FNg1dHWSRoWumrxFKygc42Xinkg
-sourceRevision: 14
+sourceRevision: 21
 license: Apache-2.0
 ---
 
-> [飞书原文](https://archebase.feishu.cn/docx/FNg1dHWSRoWumrxFKygc42Xinkg) · 源修订 14
+> [飞书原文](https://archebase.feishu.cn/docx/FNg1dHWSRoWumrxFKygc42Xinkg) · 源修订 21
 
 ::: tip 💡
 **机制课：** 机械臂通常固定在基座上，人形和移动机器人必须同时处理平衡、落脚、碰撞、接触切换和全身协调。高层 VLA 不能直接替代千赫兹级的全身控制。
@@ -13,7 +13,7 @@ license: Apache-2.0
 
 # 学习目标
 
-完成本课后，应能读懂浮动基动力学、质心动力学、接触约束和运动模仿目标；区分 model-based whole-body control、强化学习运动技能和 VLA 高层指令；理解 privileged learning、domain randomization 和 sim-to-real 在人形控制中的作用。
+完成本课后，应能读懂浮动基动力学、质心动力学、接触约束和运动模仿目标；区分 model-based whole-body control、学习式 whole-body control model、Behavior Foundation Model、强化学习运动技能和 VLA 高层指令；理解 privileged learning、跨本体训练、domain randomization 和 sim-to-real 在人形控制中的作用。
 
 # 1. 浮动基系统没有固定支点
 
@@ -127,6 +127,21 @@ $$\hat z_t=g_\psi(o_{t-k:t},a_{t-k:t-1})$$
 | 人形全身模仿 | 人体动作数据重定向到机器人 | 可实现性、平衡与形态差异 |
 | 高层 VLA + 低层技能 | 语言/视觉子目标调用运动技能 | 接口频率、失败检测与安全切换 |
 
+## 8.1 Whole-body control model 与 Behavior Foundation Model
+
+学习式 whole-body control model 通常以本体状态、接触状态、参考动作或高层命令为条件，直接输出关节目标或力矩。它学习的是“怎样让整个身体稳定、协调地执行参考或命令”，不是“动作之后世界会怎样变化”。因此它属于策略与控制模型，而不是路线 B 中的世界模型。
+
+**Behavior Foundation Model（BFM）。** 这一名称强调用大规模、异质的人体与机器人运动数据训练可复用的全身行为先验。近期工作开始同时扩大动作数据多样性、策略容量和在线 rollout 数量，使单个控制模型覆盖更多运动风格、身体部位协同与控制条件。但“大模型”并不自动带来接触可行性；稳定性仍依赖高频反馈、状态估计、执行器模型和真实硬件验证。
+
+| 代表路线 | 主要扩展轴 | 关键边界 |
+|-|-|-|
+| HoloMotion-1 | 用野外视频重建、动作捕捉和内部数据组成混合运动语料，训练零样本全身动作跟踪模型 | 动作覆盖扩大不等于足底接触、力矩峰值和长时热负载可部署 |
+| XHugWBC | 通过物理一致的形态随机化与语义对齐的观测/动作空间，训练跨人形本体的单一控制策略 | 必须在未见机器人、真实执行器差异和接触分布外条件下验证零样本迁移 |
+| Scaling BFM | 联合扩展参考动作多样性、on-policy rollout 和 Humanoid Transformer 容量 | 需要控制数据、模型规模和训练计算量，才能判断收益来自哪个 scaling 轴 |
+| ReactiveBFM | 把生成式动作规划与高频跟踪闭环连接，通过前缀采样和异步重规划学习误差恢复 | 规划器与控制器之间的暴露偏差、延迟和状态误差仍是决定性风险 |
+
+**正确接口。** BFM 或学习式 WBC 可作为“运动小脑”，接收速度、姿态、末端轨迹、文本生成的动作参考或技能 token；经典 WBC/QP 仍可作为约束投影、安全层或故障回退。评测应分开报告参考跟踪、扰动恢复、跨动作泛化、跨本体迁移、接触与硬件约束，而不是用展示视频替代控制证据。
+
 # 9. VLA 与全身控制的正确边界
 
 高层模型适合输出目标物体、导航点、身体姿态、技能 token 或短时末端轨迹；低层系统负责动态平衡、足端接触和力矩跟踪。让 VLA 直接以低频视觉输入输出全身力矩，会把稳定性、延迟和硬件差异全部交给数据承担。
@@ -180,6 +195,16 @@ $$\hat z_t=g_\psi(o_{t-k:t},a_{t-k:t-1})$$
 | Hwangbo et al.｜Dynamic Legged Skills | 该工作通过大规模仿真训练与系统建模把动态四足运动策略部署到真实机器人。 | 作者强调执行器建模、随机化和高频控制对真实动态技能的重要性。 | Sim-to-Real 的瓶颈常在执行器和时序，不应把成功归因于网络结构本身。 |
 | Kumar et al.｜RMA | RMA 通过近期交互历史估计环境上下文，使四足策略快速适应地形和动力学变化。 | 作者用特权教师训练基策略，再让部署适应模块从可用历史恢复上下文。 | 适应的证据应是参数突变后的恢复和历史消融，而不是 latent 聚类图。 |
 | Fu et al.｜HumanPlus | HumanPlus 使用人体动作数据和分层学习，使人形机器人执行影随、模仿与多类全身任务。 | 作者把人体先验转移到人形控制，并用低层运动能力支撑高层任务模仿。 | 现代人形路线正在把“可行运动先验”与“任务语义”连接起来，但仍依赖稳定低层、重定向和真实安全验证。 |
+| HoloMotion-1 | 以大规模混合运动语料训练人形运动基础模型，并面向零样本全身动作跟踪。 | 野外视频重建运动可显著扩大 MoCap 之外的行为覆盖。 | 应同时审计重建噪声、接触可行性、动作长尾和真机硬件负载。 |
+| XHugWBC | 通过形态随机化和跨机器人语义接口训练单一跨本体全身控制策略。 | 共享控制模型可把多种人形机器人的结构差异吸收到统一策略中。 | 未见本体真机迁移、执行器带宽差异和安全退化比仿真平均分更关键。 |
+| Scaling BFM / ReactiveBFM | 前者研究行为数据、rollout 与模型容量协同扩展；后者把动作生成和高频跟踪组成反应式闭环。 | 全身控制基础模型可从“复现参考”走向多条件、可恢复和实时重规划。 | 必须拆分规划、跟踪与恢复贡献，并报告延迟、跟踪偏差、摔倒率和真实扰动测试。 |
+
+## 13.1 主要资料
+
+- [HoloMotion-1 Technical Report](https://arxiv.org/abs/2605.15336)
+- [XHugWBC: Scalable and General Whole-Body Control for Cross-Humanoid Locomotion](https://arxiv.org/abs/2602.05791)
+- [Scaling Behavior Foundation Model for Humanoid Robots](https://arxiv.org/abs/2607.15163)
+- [ReactiveBFM: Reactive Closed-Loop Motion Planning Towards Universal Humanoid Whole-Body Control](https://arxiv.org/abs/2606.30362)
 
 # 14. 交叉阅读
 
