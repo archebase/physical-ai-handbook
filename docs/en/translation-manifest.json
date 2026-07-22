@@ -35,8 +35,8 @@
       "repairedAt": "2026-07-22T02:31:00.059Z"
     },
     "guide/catalog.md": {
-      "sourceHash": "11ca1a23748d1e3ae989779f48e387d5f398eecf071ae9351c772869d60e5aef",
-      "translatedAt": "2026-07-22T02:07:33.491Z",
+      "sourceHash": "519da86ab5639077de8aee940fe7de6c3652db433e8f6e4825e559cbe5decf0e",
+      "translatedAt": "2026-07-22T21:58:52.666Z",
       "model": "gpt-5.6-sol"
     },
     "route-a/05-a3-3-π0-5-开放世界泛化是如何被训练出来的.md": {
@@ -276,6 +276,11 @@
     "route-g/06-g4-openpi-与机器人系统工程实验室-从数据到可回滚部署.md": {
       "sourceHash": "0997732e7c3d3ebcaf83d3b6174daf420342b9f29423e823d22b458bf4807505",
       "translatedAt": "2026-07-22T02:28:36.963Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-b/08-b7-4d-世界状态与-world-action-models-从几何预测到可执行未来.md": {
+      "sourceHash": "26e9a03253f4dba4f54de1c4c5ed5b98f7cd781a64d73b8c6829262943343e12",
+      "translatedAt": "2026-07-22T21:59:33.653Z",
       "model": "gpt-5.6-sol"
     }
   }

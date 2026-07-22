@@ -1,7 +1,7 @@
 {
   "source": "T7dLdyp0RolnUgxQCqTcXyZZnbc",
-  "revision": 85,
-  "syncedAt": "2026-07-21T12:01:58.898Z",
+  "revision": 87,
+  "syncedAt": "2026-07-22T21:57:02.635Z",
   "documents": [
     {
       "token": "UgwUdtz3do3Gp3xNupPcuQFunSh",
@@ -121,6 +121,13 @@
       "revision": 15,
       "group": "route-b",
       "file": "07-b6-现代具身世界模型-unisim-genie-v-jepa-2-cosmos-与动作条件视频.md"
+    },
+    {
+      "token": "Ywecd7gKho7N9ax85g5ccwYfnVg",
+      "title": "B7｜4D 世界状态与 World Action Models：从几何预测到可执行未来",
+      "revision": 15,
+      "group": "route-b",
+      "file": "08-b7-4d-世界状态与-world-action-models-从几何预测到可执行未来.md"
     },
     {
       "token": "KsX3dNJTcoG4f6xo1OpcFWaOnqg",
