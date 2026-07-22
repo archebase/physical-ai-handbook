@@ -1,0 +1,234 @@
+[
+  {
+    "text": "00 | Shared Foundations",
+    "items": [
+      {
+        "text": "00｜The Common Foundation of Physical AI: What Exactly Are Agents Learning?",
+        "link": "/en/foundation/01-00-physical-ai-公共地基-智能体究竟在学习什么"
+      },
+      {
+        "text": "01｜From Robot Control to Flow Matching: The Mathematical Foundations of the π Series",
+        "link": "/en/foundation/02-01-从机器人控制到-flow-matching-π-系列的数学地基"
+      }
+    ]
+  },
+  {
+    "text": "Route A | VLA and Direct Policy Learning",
+    "items": [
+      {
+        "text": "A0｜VLA and Direct Policy Learning: From Conditional Imitation to Robotic Foundation Models",
+        "link": "/en/route-a/01-a0-vla-与直接策略学习-从条件模仿到机器人基础模型"
+      },
+      {
+        "text": "A1｜Action Representation and Generative Policies: From Continuous Control to the FAST Tokenizer",
+        "link": "/en/route-a/02-a1-动作表示与生成式策略-从连续控制到-fast-tokenizer"
+      },
+      {
+        "text": "A2｜Mainstream VLA Lineages: RT, Open X, Octo, OpenVLA, GR00T, and Gemini Robotics",
+        "link": "/en/route-a/03-a2-主流-vla-谱系-rt-open-x-octo-openvla-gr00t-与-gemini-robotics"
+      },
+      {
+        "text": "A3.1｜The π0 Architecture: How Vision-Language Models Connect to Continuous Robot Control",
+        "link": "/en/route-a/04-a3-1-π0-架构-视觉语言模型如何接上连续机器人控制"
+      },
+      {
+        "text": "A3.3｜π0.5: How Open-World Generalization Is Trained",
+        "link": "/en/route-a/05-a3-3-π0-5-开放世界泛化是如何被训练出来的"
+      },
+      {
+        "text": "A3.4｜π0.6* / RECAP: How Robots Improve from Successes, Failures, and Corrections",
+        "link": "/en/route-a/06-a3-4-π0-6-recap-机器人如何从成功-失败和纠正中改进"
+      },
+      {
+        "text": "A3.5｜π0.7: From a Generalist Policy to a Steerable Robot Foundation Model",
+        "link": "/en/route-a/07-a3-5-π0-7-从通用策略到可操控的机器人基础模型"
+      }
+    ]
+  },
+  {
+    "text": "Route B | World Models and Model-Based Planning",
+    "items": [
+      {
+        "text": "B0｜World Models and Model-Based Planning: Teaching Physical AI to Predict “What Will Happen If I Do This?”",
+        "link": "/en/route-b/01-b0-世界模型与模型式规划-让-physical-ai-学会预测-如果这样做-会发生什么"
+      },
+      {
+        "text": "B1｜State Spaces and Latent Dynamics: How World Models Construct Predictive States from Observations",
+        "link": "/en/route-b/02-b1-状态空间与潜在动力学-世界模型如何从观测中构造可预测状态"
+      },
+      {
+        "text": "B2｜Model-Based Planning: How MPC, CEM, and Trajectory Optimization Turn Predictions into Actions",
+        "link": "/en/route-b/03-b2-模型式规划-mpc-cem-与轨迹优化如何把预测变成动作"
+      },
+      {
+        "text": "B3｜Learning Through Imagination: How World Models Train Policies and Value Functions",
+        "link": "/en/route-b/04-b3-想象学习-世界模型如何训练策略与价值函数"
+      },
+      {
+        "text": "B4 | Video World Models and Visual Planning: How Generating Future Frames Helps Robots Act",
+        "link": "/en/route-b/05-b4-视频世界模型与视觉规划-生成未来画面怎样帮助机器人行动"
+      },
+      {
+        "text": "B5｜World Model Paper Lab: World Models, Dreamer, MuZero, and TD-MPC2",
+        "link": "/en/route-b/06-b5-世界模型论文实验室-world-models-dreamer-muzero-与-td-mpc2"
+      },
+      {
+        "text": "B6 | Modern Embodied World Models: UniSim, Genie, V-JEPA 2, Cosmos, and Action-Conditioned Video",
+        "link": "/en/route-b/07-b6-现代具身世界模型-unisim-genie-v-jepa-2-cosmos-与动作条件视频"
+      }
+    ]
+  },
+  {
+    "text": "Route C | Value, Reward, and Learning from Experience",
+    "items": [
+      {
+        "text": "C0 | Value, Rewards, and Learning from Experience: How Physical AI Improves Behavior from Outcomes",
+        "link": "/en/route-c/01-c0-价值-奖励与经验学习-physical-ai-如何从结果中改进行为"
+      },
+      {
+        "text": "C1｜From Bellman to Actor-Critic: How Policies Update Based on Long-Term Outcomes",
+        "link": "/en/route-c/02-c1-从-bellman-到-actor-critic-策略怎样根据长期结果更新"
+      },
+      {
+        "text": "C2｜Offline RL: How to Learn Policies Beyond Behavior Cloning from Fixed Robot Data",
+        "link": "/en/route-c/03-c2-offline-rl-固定机器人数据怎样学习超越行为克隆的策略"
+      },
+      {
+        "text": "C3 | Preferences, Reward Models, and Human Corrections: How Robots Use Human Feedback",
+        "link": "/en/route-c/04-c3-偏好-奖励模型与人工纠正-机器人如何利用人类反馈"
+      },
+      {
+        "text": "C4｜Value and Experience Learning Paper Lab: SAC, CQL, IQL, DAgger, and RECAP",
+        "link": "/en/route-c/05-c4-价值与经验学习论文实验室-sac-cql-iql-dagger-与-recap"
+      }
+    ]
+  },
+  {
+    "text": "Route D | Hierarchical Planning, Skills, Reasoning, and Memory",
+    "items": [
+      {
+        "text": "D0｜Hierarchical Planning, Skills, and Memory: How Physical AI Completes Long-Horizon Tasks",
+        "link": "/en/route-d/01-d0-分层规划-技能与记忆-physical-ai-如何完成长时任务"
+      },
+      {
+        "text": "01B｜Physical Causality and Embodied Chains of Thought: How Robots Move from Imitation to Closed-Loop Reasoning",
+        "link": "/en/route-d/02-01b-物理因果与具身思维链-机器人如何从模仿走向闭环推理"
+      },
+      {
+        "text": "D1｜Options, Skills, and Hierarchical Reinforcement Learning: Decomposing Long-Horizon Tasks into Executable Units",
+        "link": "/en/route-d/03-d1-options-技能与层级强化学习-长时任务怎样拆成可执行单元"
+      },
+      {
+        "text": "D2｜Subgoal Planning and Embodied Reasoning: How Language Plans Become Physical Closed-Loop Execution",
+        "link": "/en/route-d/04-d2-子目标规划与具身推理-语言计划怎样落到物理闭环"
+      },
+      {
+        "text": "D3｜Memory and Test-Time Adaptation: How Robots Use New Experience from the Current Environment",
+        "link": "/en/route-d/05-d3-记忆与测试时适应-机器人如何利用当前环境的新经验"
+      },
+      {
+        "text": "D4｜Hierarchical Intelligence Paper Lab: Options, Embodied Chain-of-Thought, π0.7, and WAM-TTT",
+        "link": "/en/route-d/06-d4-分层智能论文实验室-options-具身思维链-π0-7-与-wam-ttt"
+      }
+    ]
+  },
+  {
+    "text": "Route E | Perception, State, Data, and Cross-Embodiment Learning",
+    "items": [
+      {
+        "text": "E0｜Data, Representations, and Cross-Embodiment Learning: What Robots Learn Without Action Labels",
+        "link": "/en/route-e/01-e0-数据-表征与跨本体学习-机器人没有动作标签时学什么"
+      },
+      {
+        "text": "01C｜Human Videos Have No Velocity Labels—How Can Robots Learn Motion?",
+        "link": "/en/route-e/02-01c-人类视频没有速度标签-机器人如何学习运动"
+      },
+      {
+        "text": "E1｜Video Motion and Object-Centric Representations: How to Read Behavior Without Action Labels",
+        "link": "/en/route-e/03-e1-视频运动与对象中心表征-没有动作标签时如何读取行为"
+      },
+      {
+        "text": "E1.5｜Spatial State Estimation and 3D Geometry: How Robots Know Where They and Objects Are",
+        "link": "/en/route-e/04-e1-5-空间状态估计与三维几何-机器人怎样知道自己和物体在哪里"
+      },
+      {
+        "text": "E2｜Latent Action and Inverse Dynamics: Discovering Behavior Variables from State Changes",
+        "link": "/en/route-e/05-e2-latent-action-与逆动力学-从状态变化发现行为变量"
+      },
+      {
+        "text": "E3｜Behavior Tokenizer: How to Turn Continuous Behavior into Composable Semantic Units",
+        "link": "/en/route-e/06-e3-behavior-tokenizer-如何把连续行为变成可组合的语义单元"
+      },
+      {
+        "text": "E4｜Cross-Embodiment Alignment and Heterogeneous Co-Training: How Different Robots Share Data",
+        "link": "/en/route-e/07-e4-跨本体对齐与异构共训练-不同机器人怎样共享数据"
+      },
+      {
+        "text": "E5｜Human Data and Cross-Embodiment Paper Lab: R3M, MimicPlay, ATM, HumanPlus, and WAM-TTT",
+        "link": "/en/route-e/08-e5-人类数据与跨本体论文实验室-r3m-mimicplay-atm-humanplus-与-wam-ttt"
+      },
+      {
+        "text": "01D｜Palm Skeletal Lines and Hand-Object Interaction Representations",
+        "link": "/en/route-e/09-01d-手掌骨骼线与手-物交互表示"
+      }
+    ]
+  },
+  {
+    "text": "Route F | Dynamics, Control, and Physical Interaction",
+    "items": [
+      {
+        "text": "F0｜Dynamics, Control, and Physical Interaction: How Learned Policies Become Real Robot Motion",
+        "link": "/en/route-f/01-f0-动力学-控制与物理交互-学习策略如何变成真实机器人运动"
+      },
+      {
+        "text": "F1｜Feedback Control and Stability: From PD and State Space to Learning Policy Interfaces",
+        "link": "/en/route-f/02-f1-反馈控制与稳定性-从-pd-状态空间到学习策略接口"
+      },
+      {
+        "text": "F2｜Contact, Impedance, Force Control, and Tactile Sensing: How Robots Learn to “Make Contact Correctly”",
+        "link": "/en/route-f/03-f2-接触-阻抗-力控与触觉-机器人如何学会-碰得对"
+      },
+      {
+        "text": "F3｜System Identification, Latency, and Sim-to-Real: How Models Bridge Real-World Gaps",
+        "link": "/en/route-f/04-f3-系统辨识-延迟与-sim-to-real-模型怎样跨过真实世界差异"
+      },
+      {
+        "text": "F4｜Humanoids, Mobility, and Whole-Body Control: How Physical AI Controls a Dynamically Balanced Body",
+        "link": "/en/route-f/05-f4-人形-移动与全身控制-physical-ai-怎样驾驭有动态平衡的身体"
+      },
+      {
+        "text": "F5 | Control and Learning Engineering Paper Lab: From Classical Control to Residual RL and Sim-to-Real",
+        "link": "/en/route-f/06-f5-控制与学习工程论文实验室-从经典控制到-residual-rl-与-sim-to-real"
+      }
+    ]
+  },
+  {
+    "text": "Route G | Systems, Trustworthy Evaluation, and Data Engines",
+    "items": [
+      {
+        "text": "A3.6｜OpenPI in Practice: From Data Contracts to the Robotic Closed Loop",
+        "link": "/en/route-g/02-a3-6-openpi-实践-从数据契约到机器人闭环"
+      },
+      {
+        "text": "G0｜Systems, Trustworthy Evaluation, and Data Engines: How to Prove That Physical AI Really Works",
+        "link": "/en/route-g/01-g0-系统-可信评测与数据引擎-如何证明-physical-ai-真的有效"
+      },
+      {
+        "text": "G1｜Statistical Evaluation and Uncertainty: How to Prove That Physical AI Has Really Improved",
+        "link": "/en/route-g/03-g1-统计评测与不确定性-如何证明-physical-ai-真的变好了"
+      },
+      {
+        "text": "G2 | Data Engines, Reproducibility, and Versioning: Preserving the Training Facts of Physical AI",
+        "link": "/en/route-g/04-g2-数据引擎-复现与版本-physical-ai-的训练事实如何不丢失"
+      },
+      {
+        "text": "G3 | Deployment Safety, Monitoring, and Regression: Keeping Models Controllable After Release",
+        "link": "/en/route-g/05-g3-部署安全-监控与回归-模型上线后怎样保持可控"
+      },
+      {
+        "text": "G4｜OpenPI and the Robotics Systems Engineering Lab: From Data to Rollback-Capable Deployment",
+        "link": "/en/route-g/06-g4-openpi-与机器人系统工程实验室-从数据到可回滚部署"
+      }
+    ]
+  }
+]

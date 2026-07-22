@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "sync": "node scripts/sync-feishu.mjs",
+    "translate:en": "node scripts/translate-en.mjs",
+    "validate:i18n": "node scripts/validate-i18n.mjs",
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",

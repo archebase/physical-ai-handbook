@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "model": "gpt-5.6-sol",
+  "files": {
+    "data/demo-data.md": {
+      "sourceHash": "d1fbcca62fd22d62d52a00851dce8c0427b832db25a0155d5beacc85d0f006bc",
+      "translatedAt": "2026-07-22T01:47:05.922Z",
+      "model": "gpt-5.6-sol"
+    },
+    "foundation/01-00-physical-ai-公共地基-智能体究竟在学习什么.md": {
+      "sourceHash": "430e13ed31f3007799d11b10deac963cda4dfc6e8683391a62d9c9b289ee5684",
+      "translatedAt": "2026-07-22T02:05:38.192Z",
+      "model": "gpt-5.6-sol"
+    },
+    "license.md": {
+      "sourceHash": "227865041115959789348042604b0844c904168d45d3d022e3f05383233b1907",
+      "translatedAt": "2026-07-22T02:06:13.971Z",
+      "model": "gpt-5.6-sol"
+    },
+    "index.md": {
+      "sourceHash": "84302fc6b5e67d54b318b61ea1a03d05f3eb5688522e139b3e5263981c8eedcd",
+      "translatedAt": "2026-07-22T02:06:18.463Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:30:58.145Z"
+    },
+    "route-a/01-a0-vla-与直接策略学习-从条件模仿到机器人基础模型.md": {
+      "sourceHash": "b6e1c0dcc87a76f41a6e23797489866b4b7449027b3435e4eb1fa129140ca81a",
+      "translatedAt": "2026-07-22T02:07:13.933Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-a/02-a1-动作表示与生成式策略-从连续控制到-fast-tokenizer.md": {
+      "sourceHash": "9ae4199f119aea0cd8902802b77b52fb47440aa4b6c7e7831446ea3de8f8600f",
+      "translatedAt": "2026-07-22T02:07:26.799Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:00.059Z"
+    },
+    "guide/catalog.md": {
+      "sourceHash": "11ca1a23748d1e3ae989779f48e387d5f398eecf071ae9351c772869d60e5aef",
+      "translatedAt": "2026-07-22T02:07:33.491Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-a/05-a3-3-π0-5-开放世界泛化是如何被训练出来的.md": {
+      "sourceHash": "445773d76dbbe198f42ae2d3f5dc18a1822527a0719c4c85b445e05e23a8a2ac",
+      "translatedAt": "2026-07-22T02:08:13.749Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:04.479Z"
+    },
+    "route-a/03-a2-主流-vla-谱系-rt-open-x-octo-openvla-gr00t-与-gemini-robotics.md": {
+      "sourceHash": "362b37a7944956d0c0fa87a5592d8a89bc6ac8ec32f2209dca57af56ff317376",
+      "translatedAt": "2026-07-22T02:08:33.886Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-a/04-a3-1-π0-架构-视觉语言模型如何接上连续机器人控制.md": {
+      "sourceHash": "49d26567d09d15c9946e4ef5dbb0130398a303ac959944374c1d57fe519191b3",
+      "translatedAt": "2026-07-22T02:08:36.918Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:03.092Z"
+    },
+    "foundation/02-01-从机器人控制到-flow-matching-π-系列的数学地基.md": {
+      "sourceHash": "49f74a9f362f92faaf7a8fad44c808a69bfa30241dba8650f27f7a1e977a6c82",
+      "translatedAt": "2026-07-22T02:09:00.774Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:01.110Z"
+    },
+    "route-a/06-a3-4-π0-6-recap-机器人如何从成功-失败和纠正中改进.md": {
+      "sourceHash": "de53dd45fb5dcc6f7c2ef611f169db9d9991fc06697fb617928d49332d134fb5",
+      "translatedAt": "2026-07-22T02:09:57.905Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:04.759Z"
+    },
+    "route-a/07-a3-5-π0-7-从通用策略到可操控的机器人基础模型.md": {
+      "sourceHash": "dd916cccf8207229f7e39b69ccb05807e2cf665be48f5a8c5b44ec8cc952ad08",
+      "translatedAt": "2026-07-22T02:10:39.563Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:32:53.826Z"
+    },
+    "route-b/02-b1-状态空间与潜在动力学-世界模型如何从观测中构造可预测状态.md": {
+      "sourceHash": "68285307fc3e9362e2d8e59917244a83567df0920284b6b63efef21f7c94e69e",
+      "translatedAt": "2026-07-22T02:11:05.928Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-b/01-b0-世界模型与模型式规划-让-physical-ai-学会预测-如果这样做-会发生什么.md": {
+      "sourceHash": "da16191b3a9293b64c948d09af378980e1ad354fdcfa21f6d4181c6c5fc19cab",
+      "translatedAt": "2026-07-22T02:11:11.949Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-b/04-b3-想象学习-世界模型如何训练策略与价值函数.md": {
+      "sourceHash": "efdcf24e33257e479873fa3c8c28e85e0611a5b710fd4374a6b1fd725e170c7e",
+      "translatedAt": "2026-07-22T02:12:03.095Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-b/05-b4-视频世界模型与视觉规划-生成未来画面怎样帮助机器人行动.md": {
+      "sourceHash": "be038abc9f803c0f8995dd743fccb7b5bfe96a9208d926ef472602525635366c",
+      "translatedAt": "2026-07-22T02:12:12.944Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-b/03-b2-模型式规划-mpc-cem-与轨迹优化如何把预测变成动作.md": {
+      "sourceHash": "9a4289ea1b545066e8671306384b464a25274b8233f6ba3e7619bc74ed7c5121",
+      "translatedAt": "2026-07-22T02:12:18.229Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:06.364Z"
+    },
+    "route-b/06-b5-世界模型论文实验室-world-models-dreamer-muzero-与-td-mpc2.md": {
+      "sourceHash": "7284e268fee906ab3dd0bce01175acf94703817e8179d868d5ade56ee3342225",
+      "translatedAt": "2026-07-22T02:13:09.472Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-c/01-c0-价值-奖励与经验学习-physical-ai-如何从结果中改进行为.md": {
+      "sourceHash": "3ac02153ef06262efaf18eeaa60938df17560bdcb4e4b80aece88b17ff5e7dad",
+      "translatedAt": "2026-07-22T02:13:41.050Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-c/04-c3-偏好-奖励模型与人工纠正-机器人如何利用人类反馈.md": {
+      "sourceHash": "f5d69cf28960b6520feca4fa94aea9ebd303316cb36fc619b91bd1e60c5c0de2",
+      "translatedAt": "2026-07-22T02:14:35.328Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-c/02-c1-从-bellman-到-actor-critic-策略怎样根据长期结果更新.md": {
+      "sourceHash": "f8649088161397b0e6340ce49e60a083eba19478b629dcae87de46b7cbc801e9",
+      "translatedAt": "2026-07-22T02:14:47.619Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-c/03-c2-offline-rl-固定机器人数据怎样学习超越行为克隆的策略.md": {
+      "sourceHash": "188d63f774ebb4028ec7ff08d74df57204de434cb0c294665cfdaf7e41612cb1",
+      "translatedAt": "2026-07-22T02:14:47.640Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:24.555Z"
+    },
+    "route-b/07-b6-现代具身世界模型-unisim-genie-v-jepa-2-cosmos-与动作条件视频.md": {
+      "sourceHash": "604c9d4d2d6bd2a26eb82286ad591aefa75977a2ac6c37db9b7287fb801e8888",
+      "translatedAt": "2026-07-22T02:14:52.191Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-c/05-c4-价值与经验学习论文实验室-sac-cql-iql-dagger-与-recap.md": {
+      "sourceHash": "9b6cde6b222133f691836d7c5fca60daa394a2a3ddb6cdcf4863f1d16f86d2d1",
+      "translatedAt": "2026-07-22T02:15:38.745Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-d/03-d1-options-技能与层级强化学习-长时任务怎样拆成可执行单元.md": {
+      "sourceHash": "0fd1de559d8560f4f78c9c80326107d4c06ada9aea59f9232bd2ffe018a9802f",
+      "translatedAt": "2026-07-22T02:16:31.580Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-d/01-d0-分层规划-技能与记忆-physical-ai-如何完成长时任务.md": {
+      "sourceHash": "0c578abfaa55b3621d9b7fa78fabba51c4c44d2d579097f5b33768dd13a324bf",
+      "translatedAt": "2026-07-22T02:16:48.591Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-d/05-d3-记忆与测试时适应-机器人如何利用当前环境的新经验.md": {
+      "sourceHash": "a38387ea542ad50081cddd9e93993074fb531b6194a5e80ebbb87e0065c68056",
+      "translatedAt": "2026-07-22T02:18:02.275Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-d/06-d4-分层智能论文实验室-options-具身思维链-π0-7-与-wam-ttt.md": {
+      "sourceHash": "d191750bbd5c43410e8daf8a8d0b8dedf5ec8363674611690f5a88990e753e72",
+      "translatedAt": "2026-07-22T02:18:02.499Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-d/04-d2-子目标规划与具身推理-语言计划怎样落到物理闭环.md": {
+      "sourceHash": "7eb0fd558747742327f7526ce1093ac4eaec2bd394860906da5082fa00a0f646",
+      "translatedAt": "2026-07-22T02:18:12.766Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:30.697Z"
+    },
+    "route-d/02-01b-物理因果与具身思维链-机器人如何从模仿走向闭环推理.md": {
+      "sourceHash": "ed78967fd50fdd784b3f4b04b31b3db583035efc0119ee7d4fbd1a000224aa46",
+      "translatedAt": "2026-07-22T02:18:15.874Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:32.291Z"
+    },
+    "route-e/01-e0-数据-表征与跨本体学习-机器人没有动作标签时学什么.md": {
+      "sourceHash": "8c76789e2f13c1f5a3da3df3896f1cb2b8d31d06d17d83956bf7e2a1d36c4af2",
+      "translatedAt": "2026-07-22T02:19:17.274Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-e/02-01c-人类视频没有速度标签-机器人如何学习运动.md": {
+      "sourceHash": "bb7eab6259bd4751cd0c1c17e4344510537ac1f54b6648d0a8b420340f24bece",
+      "translatedAt": "2026-07-22T02:19:38.552Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-e/05-e2-latent-action-与逆动力学-从状态变化发现行为变量.md": {
+      "sourceHash": "e444bece78069a194f18498e855e2ee034548f6edfba1acd244ccfdf80af43f9",
+      "translatedAt": "2026-07-22T02:20:46.610Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:34.573Z"
+    },
+    "route-e/04-e1-5-空间状态估计与三维几何-机器人怎样知道自己和物体在哪里.md": {
+      "sourceHash": "5e0ba36defb739b9e4e2b157aef566b3ec8f5a451d940308ab8c6cbdcfa6f90d",
+      "translatedAt": "2026-07-22T02:20:47.977Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-e/03-e1-视频运动与对象中心表征-没有动作标签时如何读取行为.md": {
+      "sourceHash": "49462f5fdcee0c36ef1ac64836d74e684721b8ba19bef6fbcc47e0654b21cb67",
+      "translatedAt": "2026-07-22T02:20:49.581Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-e/07-e4-跨本体对齐与异构共训练-不同机器人怎样共享数据.md": {
+      "sourceHash": "c8fb38876cdab11dabd5d60f29aa7e98c0965cb0c6a3aa3a088505b8d4fa89ed",
+      "translatedAt": "2026-07-22T02:21:53.129Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-e/08-e5-人类数据与跨本体论文实验室-r3m-mimicplay-atm-humanplus-与-wam-ttt.md": {
+      "sourceHash": "6bcf4fd7c93f1251205cf879f68c32c587c08b788a79905e68ee478e5398a835",
+      "translatedAt": "2026-07-22T02:21:53.829Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-e/06-e3-behavior-tokenizer-如何把连续行为变成可组合的语义单元.md": {
+      "sourceHash": "a4e19079ddd7de7ee65ff8537fcbf6c72dbd4a1929d6acdccc966a7d4c06fdff",
+      "translatedAt": "2026-07-22T02:21:54.730Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-f/02-f1-反馈控制与稳定性-从-pd-状态空间到学习策略接口.md": {
+      "sourceHash": "640dd237b637dae767c9546d679ab7590592377bc2ada18650c2fc769ef8137b",
+      "translatedAt": "2026-07-22T02:22:57.136Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-e/09-01d-手掌骨骼线与手-物交互表示.md": {
+      "sourceHash": "4c5cfc32d32fbe236f103e7e265b7342fdbeef45d895d1bc8d32ab14d5352cfd",
+      "translatedAt": "2026-07-22T02:23:22.262Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-f/01-f0-动力学-控制与物理交互-学习策略如何变成真实机器人运动.md": {
+      "sourceHash": "59b4f31342636e0d34d9adb23e741f7b1f2125b4c222c6f3fb6692bb8e39fc21",
+      "translatedAt": "2026-07-22T02:23:27.134Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-f/03-f2-接触-阻抗-力控与触觉-机器人如何学会-碰得对.md": {
+      "sourceHash": "a0246d39f4c0e1ce9461693f94798e28dcf574c2496e5ccf3a214c142d4ea9e2",
+      "translatedAt": "2026-07-22T02:24:47.396Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-f/05-f4-人形-移动与全身控制-physical-ai-怎样驾驭有动态平衡的身体.md": {
+      "sourceHash": "b84fb861ed76e8e8506bd1dce47da223d6f829f38f4123d4711f24daa40ab8e8",
+      "translatedAt": "2026-07-22T02:24:55.665Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-f/04-f3-系统辨识-延迟与-sim-to-real-模型怎样跨过真实世界差异.md": {
+      "sourceHash": "0d10f8ecc753e5182e6623f565052679fe7ef776e63915c049be06db590ccede",
+      "translatedAt": "2026-07-22T02:24:58.030Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:34.643Z"
+    },
+    "route-g/02-a3-6-openpi-实践-从数据契约到机器人闭环.md": {
+      "sourceHash": "da194c50f4f313331527ea5c98dfc62687eddb9b6d88b9b5ee4d623c804c72ff",
+      "translatedAt": "2026-07-22T02:25:30.206Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:40.335Z"
+    },
+    "route-f/06-f5-控制与学习工程论文实验室-从经典控制到-residual-rl-与-sim-to-real.md": {
+      "sourceHash": "22ed276617d4f576a4a6eafb64555eddf36d98e07b64ae43a385a0bfdb4f89ec",
+      "translatedAt": "2026-07-22T02:25:54.162Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-g/01-g0-系统-可信评测与数据引擎-如何证明-physical-ai-真的有效.md": {
+      "sourceHash": "11fd9f05ca0774e2069056234f3d360115e5ca49cd6800bb56a29b1286c9317b",
+      "translatedAt": "2026-07-22T02:26:08.006Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-g/04-g2-数据引擎-复现与版本-physical-ai-的训练事实如何不丢失.md": {
+      "sourceHash": "3feda0519a79179df83a6c0df585dea02252ef1150d0f269e348625d2769baf4",
+      "translatedAt": "2026-07-22T02:27:13.287Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-g/05-g3-部署安全-监控与回归-模型上线后怎样保持可控.md": {
+      "sourceHash": "770c78b5957820120b03b559488123d3323ecaa2f72b2608cd0c8b1c029c70dc",
+      "translatedAt": "2026-07-22T02:27:18.581Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:43.561Z"
+    },
+    "route-g/03-g1-统计评测与不确定性-如何证明-physical-ai-真的变好了.md": {
+      "sourceHash": "57586ab7a8b37533b46bf210d3ed2b08aa50a31395959a942710dc92a09597c6",
+      "translatedAt": "2026-07-22T02:27:27.506Z",
+      "model": "gpt-5.6-sol",
+      "repairedAt": "2026-07-22T02:31:41.150Z"
+    },
+    "route-g/06-g4-openpi-与机器人系统工程实验室-从数据到可回滚部署.md": {
+      "sourceHash": "0997732e7c3d3ebcaf83d3b6174daf420342b9f29423e823d22b458bf4807505",
+      "translatedAt": "2026-07-22T02:28:36.963Z",
+      "model": "gpt-5.6-sol"
+    }
+  }
+}

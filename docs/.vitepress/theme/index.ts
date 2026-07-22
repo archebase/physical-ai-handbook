@@ -9,7 +9,10 @@ function preloadSearchIndex() {
     // VitePress generates this virtual module during the production build.
     // @ts-expect-error virtual module provided by VitePress local search
     import('@localSearchIndex')
-      .then(({default: indexes}) => indexes.root?.())
+      .then(({default: indexes}) => {
+        const locale = /\/en(?:\/|$)/.test(window.location.pathname) ? 'en' : 'root';
+        return indexes[locale]?.();
+      })
       .catch(() => {});
   };
 
