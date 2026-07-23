@@ -35,8 +35,8 @@
       "repairedAt": "2026-07-22T02:31:00.059Z"
     },
     "guide/catalog.md": {
-      "sourceHash": "519da86ab5639077de8aee940fe7de6c3652db433e8f6e4825e559cbe5decf0e",
-      "translatedAt": "2026-07-22T21:58:52.666Z",
+      "sourceHash": "1e1588ec22a15a99a74b0abdc4328c382783bbe40b1155a414d8e0bfe6413382",
+      "translatedAt": "2026-07-23T15:30:58.140Z",
       "model": "gpt-5.6-sol"
     },
     "route-a/05-a3-3-π0-5-开放世界泛化是如何被训练出来的.md": {
@@ -80,8 +80,8 @@
       "model": "gpt-5.6-sol"
     },
     "route-b/01-b0-世界模型与模型式规划-让-physical-ai-学会预测-如果这样做-会发生什么.md": {
-      "sourceHash": "da16191b3a9293b64c948d09af378980e1ad354fdcfa21f6d4181c6c5fc19cab",
-      "translatedAt": "2026-07-22T02:11:11.949Z",
+      "sourceHash": "efde36014791a32fec495dbfaa94699169025f5f15835d3301fc1e8971c46475",
+      "translatedAt": "2026-07-23T15:30:54.154Z",
       "model": "gpt-5.6-sol"
     },
     "route-b/04-b3-想象学习-世界模型如何训练策略与价值函数.md": {
@@ -99,11 +99,6 @@
       "translatedAt": "2026-07-22T02:12:18.229Z",
       "model": "gpt-5.6-sol",
       "repairedAt": "2026-07-22T02:31:06.364Z"
-    },
-    "route-b/06-b5-世界模型论文实验室-world-models-dreamer-muzero-与-td-mpc2.md": {
-      "sourceHash": "7284e268fee906ab3dd0bce01175acf94703817e8179d868d5ade56ee3342225",
-      "translatedAt": "2026-07-22T02:13:09.472Z",
-      "model": "gpt-5.6-sol"
     },
     "route-c/01-c0-价值-奖励与经验学习-physical-ai-如何从结果中改进行为.md": {
       "sourceHash": "3ac02153ef06262efaf18eeaa60938df17560bdcb4e4b80aece88b17ff5e7dad",
@@ -125,11 +120,6 @@
       "translatedAt": "2026-07-22T02:14:47.640Z",
       "model": "gpt-5.6-sol",
       "repairedAt": "2026-07-22T02:31:24.555Z"
-    },
-    "route-b/07-b6-现代具身世界模型-unisim-genie-v-jepa-2-cosmos-与动作条件视频.md": {
-      "sourceHash": "604c9d4d2d6bd2a26eb82286ad591aefa75977a2ac6c37db9b7287fb801e8888",
-      "translatedAt": "2026-07-22T02:14:52.191Z",
-      "model": "gpt-5.6-sol"
     },
     "route-c/05-c4-价值与经验学习论文实验室-sac-cql-iql-dagger-与-recap.md": {
       "sourceHash": "9b6cde6b222133f691836d7c5fca60daa394a2a3ddb6cdcf4863f1d16f86d2d1",
@@ -279,8 +269,18 @@
       "model": "gpt-5.6-sol"
     },
     "route-b/08-b7-4d-世界状态与-world-action-models-从几何预测到可执行未来.md": {
-      "sourceHash": "26e9a03253f4dba4f54de1c4c5ed5b98f7cd781a64d73b8c6829262943343e12",
-      "translatedAt": "2026-07-22T21:59:33.653Z",
+      "sourceHash": "ff6ff5962710330057d014fced61b590785fd167306133e724e1c056b92228f4",
+      "translatedAt": "2026-07-23T15:38:58.991Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-b/06-b5-决策世界模型谱系-从内部模拟-dreamer-到-td-mpc2.md": {
+      "sourceHash": "fd0f16d3951409af5c489e759c21d107abbd1fd9ef8f4f7147edf0fead66bc84",
+      "translatedAt": "2026-07-23T15:31:57.138Z",
+      "model": "gpt-5.6-sol"
+    },
+    "route-b/07-b6-现代世界模型思想谱系-jepa-空间智能与生成式模拟器.md": {
+      "sourceHash": "7f7c92575de1a1635fcb7997a54d6b8e1406b55e9d9e35cd58d04f964e6195ea",
+      "translatedAt": "2026-07-23T15:33:16.333Z",
       "model": "gpt-5.6-sol"
     }
   }

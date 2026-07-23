@@ -1,15 +1,23 @@
 ---
-title: "B5｜世界模型论文实验室：World Models、Dreamer、MuZero 与 TD-MPC2"
+title: "B5｜决策世界模型谱系：从内部模拟、Dreamer 到 TD-MPC2"
 sourceToken: ENq7dECdwoOAFxxDYDxcruNBniB
-sourceRevision: 12
+sourceRevision: 14
 license: Apache-2.0
 ---
 
-> [飞书原文](https://archebase.feishu.cn/docx/ENq7dECdwoOAFxxDYDxcruNBniB) · 源修订 12
+> [飞书原文](https://archebase.feishu.cn/docx/ENq7dECdwoOAFxxDYDxcruNBniB) · 源修订 14
 
 ::: tip 🔬
 **论文实验室：** 本课不按发布时间复述摘要，而用“表示什么、预测什么、动作如何产生、证据是什么”比较主要世界模型路线，并说明哪些机制适合机器人。
 :::
+
+# 本课边界：这是决策世界模型谱系，不是整个世界模型领域
+
+本课关注一条非常具体的主线：用内部模型支持动作选择。从经典控制的系统辨识、状态估计和模型预测控制出发，研究者逐步把显式物理状态替换为从高维观测中学习的潜在状态，再用想象 rollout、树搜索或短时轨迹优化产生决策。
+
+这条路线的共同点不是“会生成未来画面”，而是预测结果有明确消费者：规划器、价值函数或策略。World Models 与 Dreamer 研究如何在 latent 中高效想象；MuZero 说明决策模型不必重建完整观测，只需预测搜索所需的奖励、价值与策略信息；TD-MPC 系列把潜在动力学、价值学习和短时 MPC 紧密结合。
+
+本课不会代表 JEPA 的预测表征路线、李飞飞的空间智能路线或生成式交互环境路线。它们将在 B6 中统一比较，并在 B7 汇合到 4D 世界状态与 World Action Models。
 
 # 统一比较框架
 

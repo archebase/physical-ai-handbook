@@ -1,55 +1,55 @@
 ---
 title: Course Catalog
 sourceToken: T7dLdyp0RolnUgxQCqTcXyZZnbc
-sourceRevision: 87
+sourceRevision: 91
 license: Apache-2.0
 translationSource: "guide/catalog.md"
-translationSourceHash: 519da86ab5639077de8aee940fe7de6c3652db433e8f6e4825e559cbe5decf0e
+translationSourceHash: 1e1588ec22a15a99a74b0abdc4328c382783bbe40b1155a414d8e0bfe6413382
 ---
 
-> [Feishu Source Catalog](https://archebase.feishu.cn/docx/T7dLdyp0RolnUgxQCqTcXyZZnbc) · Source Revision 87
+> [Feishu Source Catalog](https://archebase.feishu.cn/docx/T7dLdyp0RolnUgxQCqTcXyZZnbc) · Source Revision 91
 
 ::: tip 💡
-**Intended audience:** Algorithm, data, and robotics systems practitioners with knowledge of probability and statistics, linear algebra, and basic deep learning who want to quickly build a comprehensive understanding of Physical AI. This catalog is organized not by company or paper publication date, but by the mathematical objects that models actually learn.
+**Intended audience:** Algorithm, data, and robotics systems practitioners with knowledge of probability and statistics, linear algebra, and foundational deep learning who want to quickly build a comprehensive understanding of Physical AI. This catalog is organized not by company or paper publication date, but by the mathematical objects that models actually learn.
 :::
 
 # How to Use This Catalog
 
-Physical AI is not a single linear technical path. Direct policies, world models, value learning, hierarchical planning, data representations, control, and systems engineering each solve different problems while operating together within the same physical closed loop.
+Physical AI is not a single-track technology path. Direct policies, world models, value learning, hierarchical planning, data representations, control, and systems engineering each address different problems while operating together within the same physical closed loop.
 
-All readers should first complete the “Common Foundations” and then choose one primary track for deeper study. An article’s **primary placement** indicates only the best entry point; it does not mean that the article is relevant exclusively to that track. Cross-track relationships are explicitly noted after each module.
+All readers should first complete the “Common Foundations” and then choose one primary track for deeper study. An article’s **primary placement** only indicates the best entry point; it does not mean that the article is relevant only to that track. Cross-track relationships are explicitly identified after each module.
 
 ## Unified Course Quality Standards
 
-This course is intended for readers with university-level knowledge of probability and statistics, linear algebra, and basic deep learning. Every mechanism course and paper lab must meet the following requirements to be considered complete.
+This course is intended for readers with university-level knowledge of probability and statistics, linear algebra, and foundational deep learning. Every mechanism course and paper lab must meet the following requirements to be considered complete.
 
 | Requirement | Must Answer |
 |-|-|
-| Learning object | Whether the model is estimating a distribution, state, value, subgoal, representation, or control law |
-| How to read equations | Every standalone equation must be followed immediately by a blockquote that explains each condition, random variable, and operator in plain language |
-| Derivation | Explain which probabilistic assumption, definition, physical equation, or optimization objective each equation follows from; presenting only the result is not allowed |
-| Visualization | Include at least one computational graph, probabilistic graph, closed-loop diagram, or curve that genuinely reduces the effort required for understanding |
-| Minimal experiment | Readers must be able to reproduce the key phenomenon in a toy environment rather than merely trust the paper’s conclusions |
-| Position in the literature | Distinguish facts, author interpretations, and course judgments, and compare against strong baselines on the same track |
-| Closed-loop risks | Discuss distribution shift, contact, latency, missing observations, safety, and failure recovery |
+| Learning object | Is the model estimating a distribution, state, value, subgoal, representation, or control law? |
+| How to read equations | Every standalone equation must be immediately followed by a blockquote that explains, in plain language, the conditions, random variables, and operators term by term. |
+| Derivation | Explain which probabilistic assumption, definition, physical equation, or optimization objective the equation follows from; presenting only the result is not allowed. |
+| Visualization | Include at least one computational graph, probabilistic graph, closed-loop diagram, or curve that genuinely reduces the effort required to understand the material. |
+| Minimal experiment | Readers must be able to reproduce the key phenomenon in a toy environment rather than simply trust the paper’s conclusions. |
+| Position in the literature | Distinguish facts, the authors’ interpretations, and the course’s assessment, and compare against strong baselines from the same track. |
+| Closed-loop risks | Discuss distribution shift, contact, latency, missing observations, safety, and failure recovery. |
 
-All equations follow a unified “four-step explanation”: first present the equation, then provide a blockquoted plain-language reading, derive it, and finally explain its meaning in the robot’s closed loop.
+All equations follow a unified “four-step explanation”: first present the equation, then provide a blockquoted plain-language reading, derive it, and finally explain its meaning within the robot’s closed loop.
 
-> **Example equation-reading block:** This should not merely recite the symbols. It should explain what conditions are given, which random quantity is being predicted, and which cases are covered by the summation or expectation.
+> **Example equation-reading block:** Rather than merely reading the symbols aloud, explain “what is conditioned on, which random quantity is being predicted, and which cases are covered by the sum or expectation.”
 
-Inline symbols are defined consistently in each section’s notation table. Every standalone equation that defines a quantity, loss, dynamics model, update rule, or inference process must have its own blockquoted reading and derivation.
+Inline symbols are explained consistently in each section’s notation table. Every standalone equation that defines a concept, loss, dynamics, update rule, or inference procedure must include its own blockquoted reading and derivation.
 
 <MermaidDiagram encoded="Zmxvd2NoYXJ0IExSCiAgICBGW0NvbW1vbiBGb3VuZGF0aW9uc10gLS0+IEFbVkxBIGFuZCBEaXJlY3QgUG9saWNpZXNdCiAgICBGIC0tPiBCW1dvcmxkIE1vZGVscyBhbmQgUGxhbm5pbmddCiAgICBGIC0tPiBDW1ZhbHVlIGFuZCBFeHBlcmllbmNlIExlYXJuaW5nXQogICAgRiAtLT4gRFtIaWVyYXJjaGljYWwgUmVhc29uaW5nIGFuZCBNZW1vcnldCiAgICBGIC0tPiBFW0RhdGEgYW5kIENyb3NzLUVtYm9kaW1lbnQgUmVwcmVzZW50YXRpb25zXQogICAgRiAtLT4gSFtEeW5hbWljcyBhbmQgQ29udHJvbF0KICAgIEUgLS0+IEEKICAgIEUgLS0+IEIKICAgIEIgLS0+IEQKICAgIEIgLS0+IEMKICAgIEMgLS0+IEEKICAgIEMgLS0+IEQKICAgIEQgLS0+IEEKICAgIEEgLS0+IEgKICAgIEIgLS0+IEgKICAgIEggLS0+IEdbU3lzdGVtcywgRXZhbHVhdGlvbiwgYW5kIERhdGEgRW5naW5lc10KICAgIEcgLS0+IEU=" />
 
-# 00｜Common Foundations: A Shared Language for All Tracks
+# 00｜Common Foundations: The Shared Language of All Tracks
 
-**Core questions:** What are states, observations, actions, trajectories, and policies? Why does the training distribution change at deployment time? How do the loss functions of probabilistic models translate into real robot behavior?
+**Core questions:** What are states, observations, actions, trajectories, and policies? Why does the training distribution change during deployment? How do the loss functions of probabilistic models translate into real robot behavior?
 
 ## 00.1｜Common Foundations Core Course
 
 [00｜Physical AI Common Foundations: What Is an Agent Actually Learning?](/en/foundation/01-00-physical-ai-公共地基-智能体究竟在学习什么)
 
-**Paper and Derivation Lab:** [An In-Depth Derivation of Behavior Cloning, Distribution Shift, and Flow Matching](/en/foundation/02-01-从机器人控制到-flow-matching-π-系列的数学地基)
+**Paper and derivation lab:** [An In-Depth Derivation of Behavior Cloning, Distribution Shift, and Flow Matching](/en/foundation/02-01-从机器人控制到-flow-matching-π-系列的数学地基)
 
 **Learning objects:** Conditional action distributions, maximum likelihood, mean squared error, multimodal actions, action chunks, and deployment distribution shift.
 
@@ -59,7 +59,7 @@ Inline symbols are defined consistently in each section’s notation table. Ever
 |-|-|-|
 | Policy | Conditional action distribution | What should be done now? |
 | World model | Action-conditioned state-transition distribution | What will happen after doing this? |
-| Value function | State values and action values | How good will the future be? |
+| Value function | State value and action value | How good will the future be? |
 | Planner | Candidate action sequences or subgoals | Which path should be selected? |
 | Controller | Feedback control law | How can the action be executed stably? |
 
@@ -73,7 +73,7 @@ Inline symbols are defined consistently in each section’s notation table. Ever
 
 **Cross-track relationships:** Uses data and representations from Track E; can be further improved using value signals from Track C; and is ultimately executed by the control systems in Track F.
 
-## A1｜Topic Lab: Action Representations and FAST
+## A1｜Specialized Lab: Action Representations and FAST
 
 [Action Representations: MSE, Autoregressive Tokens, Diffusion, Flow Matching, and FAST](/en/route-a/02-a1-动作表示与生成式策略-从连续控制到-fast-tokenizer)
 
@@ -85,22 +85,22 @@ Inline symbols are defined consistently in each section’s notation table. Ever
 
 **Core questions:** Beyond the π series, how do mainstream VLAs combine multitask imitation, vision-language pretraining, cross-embodiment data, and generative action modules? Do capability gains actually come from architecture, data, or post-training?
 
-## A3｜Physical Intelligence π Series Paper Labs
+## A3｜Physical Intelligence π-Series Paper Labs
 
-| Lab | Article | Topic Within the VLA Track | Cross-Track Links |
+| Lab | Article | Topic Within the VLA Track | Related Tracks |
 |-|-|-|-|
 | A3.1｜π0 | [How a VLM Connects to Continuous Control](/en/route-a/04-a3-1-π0-架构-视觉语言模型如何接上连续机器人控制) | Multimodal conditioning and the Action Expert | E, F |
-| A3.2｜FAST | [Why Actions Need a Tokenizer](/en/route-a/02-a1-动作表示与生成式策略-从连续控制到-fast-tokenizer) | Discrete-action pretraining and the continuous-control interface | E |
+| A3.2｜FAST | [Why Actions Need a Tokenizer](/en/route-a/02-a1-动作表示与生成式策略-从连续控制到-fast-tokenizer) | Discrete action pretraining and the continuous-control interface | E |
 | A3.3｜π0.5 | [How Open-World Generalization Is Trained](/en/route-a/05-a3-3-π0-5-开放世界泛化是如何被训练出来的) | Heterogeneous co-training, hierarchical reasoning, and post-training | D, E |
 | A3.4｜π0.6\* / RECAP | [Improving from Successes, Failures, and Corrections](/en/route-a/06-a3-4-π0-6-recap-机器人如何从成功-失败和纠正中改进) | How a general-purpose VLA continues to improve using deployment experience | C, G |
 | A3.5｜π0.7 | [From a General-Purpose Policy to a Controllable Model](/en/route-a/07-a3-5-π0-7-从通用策略到可操控的机器人基础模型) | Prompts, visual subgoals, automatic hierarchy, and controllability | B, D, E |
 | A3.6｜OpenPI | [OpenPI in Practice and Data Production](/en/route-g/02-a3-6-openpi-实践-从数据契约到机器人闭环) | VLA training, data formats, and deployment engineering | G |
 
-**Recommended order:** A0 → A1 → A2 → π0 → π0.5 → π0.6\* → π0.7. FAST can be studied independently after π0.
+**Recommended sequence:** A0 → A1 → A2 → π0 → π0.5 → π0.6\* → π0.7. FAST can be studied independently after π0.
 
 # Track B｜World Models and Model-Based Planning
 
-**Track question:** Can a model learn action-conditioned future changes and compare “what would happen if I did this” within the model?
+**Track question:** Can action-conditioned future changes be learned so that the model can compare “what would happen if we did this”?
 
 ## B0｜Track Core Course: World Models and Model-Based Planning
 
@@ -110,19 +110,21 @@ Inline symbols are defined consistently in each section’s notation table. Ever
 
 | Module | Core Question | Course |
 |-|-|-|
-| B1｜State Spaces and Latent Dynamics | How can a predictable state be constructed from partially observable data? | [State Spaces, Filtering, ELBO, and Multistep Rollouts](/en/route-b/02-b1-状态空间与潜在动力学-世界模型如何从观测中构造可预测状态) |
+| B1｜State Spaces and Latent Dynamics | How can a predictive state be constructed from partially observable data? | [State Spaces, Filtering, ELBO, and Multistep Rollouts](/en/route-b/02-b1-状态空间与潜在动力学-世界模型如何从观测中构造可预测状态) |
 | B2｜Model-Based Planning | How can actions be searched within a learned model? | [MPC, CEM, Trajectory Optimization, and Risk-Aware Planning](/en/route-b/03-b2-模型式规划-mpc-cem-与轨迹优化如何把预测变成动作) |
 | B3｜Learning from Imagination | How can latent rollouts be used to train an actor-critic? | [Dreamer, Model Gradients, and Imagination Bias](/en/route-b/04-b3-想象学习-世界模型如何训练策略与价值函数) |
 | B4｜Video World Models | How can visual futures become subgoals and control conditions? | [Video Prediction, Visual Planning, and Physical Consistency](/en/route-b/05-b4-视频世界模型与视觉规划-生成未来画面怎样帮助机器人行动) |
-| B5｜Classic Paper Lab | How do latent world models and model-based reinforcement learning methods compare? | [World Models, Dreamer, MuZero, and TD-MPC2](/en/route-b/06-b5-世界模型论文实验室-world-models-dreamer-muzero-与-td-mpc2) |
-| B6｜Modern Embodied World Models | When do generated videos, interactive environments, and action-conditioned models genuinely benefit control? | [UniSim, Genie, V-JEPA 2, Cosmos, and Action-Conditioned Video](/en/route-b/07-b6-现代具身世界模型-unisim-genie-v-jepa-2-cosmos-与动作条件视频) |
-| B7｜4D World States and World Action Models | How can actions, future worlds, and time-varying 3D structure be jointly modeled and validated? | [From Geometric Prediction to Executable Futures](/en/route-b/08-b7-4d-世界状态与-world-action-models-从几何预测到可执行未来) |
+| B5｜Decision World Model Lineage | How do internal models produce decisions through imagination, search, and MPC? | [From World Models and Dreamer to TD-MPC2](/en/route-b/06-b5-决策世界模型谱系-从内部模拟-dreamer-到-td-mpc2) |
+| B6｜Modern World Model Lineages | How do JEPA, spatial intelligence, and generative simulators converge? | [Yann LeCun, Fei-Fei Li, and the Modern World Model Roadmap](/en/route-b/07-b6-现代世界模型思想谱系-jepa-空间智能与生成式模拟器) |
+| B7｜4D World States and World Action Models | How can actions, future worlds, and time-varying 3D structures be jointly modeled and integrated into the physical closed loop? | [From Conceptual Convergence and Geometric Prediction to Executable Futures](/en/route-b/08-b7-4d-世界状态与-world-action-models-从几何预测到可执行未来) |
 
-**Cross-track relationships:** Provides subgoals and counterfactual rollouts to Track D and imagined data to Track C; the visual subgoals of π0.7 and WAM-TTT can serve as cross-track case studies.
+**Recommended sequence:** Begin with B0 to establish the five lineages and a unified comparison framework. Use B1-B4 to develop the necessary foundations in state, planning, learning from imagination, and video prediction. Study decision world models in depth in B5. Use B6 to understand Yann LeCun’s JEPA approach, Fei-Fei Li’s spatial intelligence approach, and generative simulators. Finally, proceed to B7 for 4D-WAM, whole-body control interfaces, and closed-loop evidence.
+
+**Cross-track relationships:** Provides subgoals and counterfactual rollouts to Track D and imagined data to Track C. The visual subgoals of π0.7 and WAM-TTT can serve as cross-track case studies.
 
 # Track C｜Value, Reward, and Experience Learning
 
-**Track question:** How can robots determine which states and actions are better in the long term and use successes, failures, preferences, and corrections from deployment to improve their policies?
+**Track question:** How does a robot determine which states and actions produce better long-term outcomes, and how can it improve its policy using successes, failures, preferences, and corrections gathered during deployment?
 
 ## C0｜Track Core Course: Value, Reward, and Experience Learning
 
@@ -133,21 +135,21 @@ Inline symbols are defined consistently in each section’s notation table. Ever
 | Module | Core Question | Course |
 |-|-|-|
 | C1｜Bellman and Actor-Critic | How do long-term outcomes update a policy? | [TD, Policy Gradients, Advantage, and Continuous Control](/en/route-c/02-c1-从-bellman-到-actor-critic-策略怎样根据长期结果更新) |
-| C2｜Offline RL | How can fixed datasets outperform behavior cloning? | [Out-of-Distribution Overestimation, CQL, IQL, and AWR](/en/route-c/03-c2-offline-rl-固定机器人数据怎样学习超越行为克隆的策略) |
-| C3｜Preferences and Human Corrections | How can human feedback become reward and recovery supervision? | [Reward Models, DAgger, Interventions, and Active Feedback](/en/route-c/04-c3-偏好-奖励模型与人工纠正-机器人如何利用人类反馈) |
-| C4｜Paper Lab | How do online, offline, correction-based, and VLA experience-learning methods compare? | [SAC, CQL, IQL, DAgger, and RECAP](/en/route-c/05-c4-价值与经验学习论文实验室-sac-cql-iql-dagger-与-recap) |
+| C2｜Offline RL | How can a fixed dataset outperform behavior cloning? | [Out-of-Distribution Overestimation, CQL, IQL, and AWR](/en/route-c/03-c2-offline-rl-固定机器人数据怎样学习超越行为克隆的策略) |
+| C3｜Preferences and Human Corrections | How can human feedback become reward signals and recovery supervision? | [Reward Models, DAgger, Interventions, and Active Feedback](/en/route-c/04-c3-偏好-奖励模型与人工纠正-机器人如何利用人类反馈) |
+| C4｜Paper Lab | How do online, offline, corrective, and VLA experience learning compare? | [SAC, CQL, IQL, DAgger, and RECAP](/en/route-c/05-c4-价值与经验学习论文实验室-sac-cql-iql-dagger-与-recap) |
 
-**Cross-track relationships:** π0.6\* / RECAP is primarily placed in the VLA paper labs, but it is also a core case study for this track; world models can provide imagined rollouts for this track.
+**Cross-track relationships:** π0.6\* / RECAP is primarily placed in the VLA paper labs while also serving as a central case study for this track. World models can provide imagined rollouts for this track.
 
 # Track D｜Hierarchical Planning, Skills, Reasoning, and Memory
 
-**Track question:** How can long-horizon tasks be decomposed into subgoals? How can high-level language or visual plans invoke low-level continuous policies? How can a model remember demonstrations and adapt at test time?
+**Track questions:** How can long-horizon tasks be decomposed into subgoals? How can high-level language or visual plans invoke low-level continuous policies? How can a model remember demonstrations and adapt at test time?
 
 ## D0｜Track Core Course: Hierarchical Planning, Skills, and Memory
 
 [D0｜Hierarchical Planning, Skills, and Memory: How Physical AI Completes Long-Horizon Tasks](/en/route-d/01-d0-分层规划-技能与记忆-physical-ai-如何完成长时任务)
 
-**Topic Lab:** [Physical Causality and Embodied Chain-of-Thought](/en/route-d/02-01b-物理因果与具身思维链-机器人如何从模仿走向闭环推理)
+**Specialized lab:** [Physical Causality and Embodied Chain-of-Thought](/en/route-d/02-01b-物理因果与具身思维链-机器人如何从模仿走向闭环推理)
 
 ## D1-D4｜Hierarchical Intelligence Course Tree
 
@@ -155,35 +157,35 @@ Inline symbols are defined consistently in each section’s notation table. Ever
 |-|-|-|
 | D1｜Options and Hierarchical RL | How can initiable, terminable, and reusable skills be learned? | [Options, Semi-MDPs, Skill Discovery, and Composition](/en/route-d/03-d1-options-技能与层级强化学习-长时任务怎样拆成可执行单元) |
 | D2｜Subgoals and Embodied Reasoning | How can language plans become reachable and verifiable closed-loop subgoals? | [Task Graphs, World Models, Visual Subgoals, and Recovery](/en/route-d/04-d2-子目标规划与具身推理-语言计划怎样落到物理闭环) |
-| D3｜Memory and Test-Time Adaptation | How can new experience from the current environment be incorporated into the policy? | [Context, External Memory, Fast Weights, and WAM-TTT](/en/route-d/05-d3-记忆与测试时适应-机器人如何利用当前环境的新经验) |
-| D4｜Paper Lab | How do traditional hierarchical RL and modern hierarchical VLA systems compare? | [Options, Embodied Chain-of-Thought, π0.7, and WAM-TTT](/en/route-d/06-d4-分层智能论文实验室-options-具身思维链-π0-7-与-wam-ttt) |
+| D3｜Memory and Test-Time Adaptation | How can new experience from the current environment be written into the policy? | [Context, External Memory, Fast Weights, and WAM-TTT](/en/route-d/05-d3-记忆与测试时适应-机器人如何利用当前环境的新经验) |
+| D4｜Paper Lab | How do traditional hierarchical RL and emerging hierarchical VLA systems compare? | [Options, Embodied Chain-of-Thought, π0.7, and WAM-TTT](/en/route-d/06-d4-分层智能论文实验室-options-具身思维链-π0-7-与-wam-ttt) |
 
 # Track E｜Perception, State, Data, and Cross-Embodiment Learning
 
-**Track question:** How can a robot construct a spatial state from incomplete observations? What can human videos without action labels provide? How can different robots, cameras, coordinate systems, and action spaces be incorporated into joint training?
+**Track questions:** How does a robot construct a spatial state from incomplete observations? What can human videos without action labels provide? How can different robots, cameras, coordinate systems, and action spaces be incorporated into joint training?
 
 ## E0｜Track Core Course: Data, Representations, and Cross-Embodiment Learning
 
 [E0｜Data, Representations, and Cross-Embodiment Learning: What Do Robots Learn Without Action Labels?](/en/route-e/01-e0-数据-表征与跨本体学习-机器人没有动作标签时学什么)
 
-**Topic Lab:** [Human Videos Have No Velocity Labels](/en/route-e/02-01c-人类视频没有速度标签-机器人如何学习运动)
+**Specialized lab:** [Human Videos Have No Velocity Labels](/en/route-e/02-01c-人类视频没有速度标签-机器人如何学习运动)
 
 ## E1-E6｜Perception, Data, and Cross-Embodiment Course Tree
 
 | Module | Core Question | Course |
 |-|-|-|
 | E1｜Video Motion and Object-Centric Representations | How can motion and interaction be extracted without action labels? | [Optical Flow, Keypoints, Hand-Object Representations, and Events](/en/route-e/03-e1-视频运动与对象中心表征-没有动作标签时如何读取行为) |
-| E1.5｜Spatial State Estimation and 3D Geometry | How can a robot infer itself, objects, and uncertainty from observation history? | [Bayes Filters, SE(3), Depth, Object States, and Affordances](/en/route-e/04-e1-5-空间状态估计与三维几何-机器人怎样知道自己和物体在哪里) |
+| E1.5｜Spatial State Estimation and 3D Geometry | How does a robot infer itself, objects, and uncertainty from observation histories? | [Bayes Filters, SE(3), Depth, Object States, and Affordances](/en/route-e/04-e1-5-空间状态估计与三维几何-机器人怎样知道自己和物体在哪里) |
 | E3｜Latent Actions and Inverse Dynamics | How can behavioral variables be discovered from state changes? | [Inverse Models, Latent Actions, Non-Identifiability, and Adaptation](/en/route-e/05-e2-latent-action-与逆动力学-从状态变化发现行为变量) |
-| E4｜Behavior Tokenizers | How can behavior be transformed into composable semantic units? | [VQ, Event Boundaries, Hierarchical Tokens, and FAST](/en/route-e/06-e3-behavior-tokenizer-如何把连续行为变成可组合的语义单元) |
+| E4｜Behavior Tokenizers | How can behavior be converted into compositional semantic units? | [VQ, Event Boundaries, Hierarchical Tokens, and FAST](/en/route-e/06-e3-behavior-tokenizer-如何把连续行为变成可组合的语义单元) |
 | E5｜Cross-Embodiment Alignment and Co-Training | How can different robots share data without conflating their actions? | [Adapters, Object-Centric Actions, Data Mixtures, and Transfer](/en/route-e/07-e4-跨本体对齐与异构共训练-不同机器人怎样共享数据) |
 | E6｜Paper Lab | How do the primary mechanisms for incorporating human data into robot training compare? | [R3M, MimicPlay, ATM, HumanPlus, and WAM-TTT](/en/route-e/08-e5-人类数据与跨本体论文实验室-r3m-mimicplay-atm-humanplus-与-wam-ttt) |
 
-**Cross-track relationships:** Provides action and semantic supervision to Track A, temporal representations to Track B, and demonstrations and memory inputs to Track D. π0.5 is a case study in heterogeneous co-training, while WAM-TTT is a case study in adaptation from human demonstrations.
+**Cross-track relationships:** Provides action and semantic supervision for Track A, temporal representations for Track B, and demonstrations and memory inputs for Track D. π0.5 is a case study in heterogeneous co-training, while WAM-TTT is a case study in adaptation from human demonstrations.
 
 # Track F｜Dynamics, Control, and Physical Interaction
 
-**Track question:** How can actions output by a learned model be applied stably and safely to real systems with mass, friction, contact, compliance, and latency?
+**Track question:** How can the actions produced by a learned model be applied stably and safely to real systems with mass, friction, contact, compliance, and latency?
 
 ## F0｜Track Core Course: Dynamics, Control, and Physical Interaction
 
@@ -194,40 +196,40 @@ Inline symbols are defined consistently in each section’s notation table. Ever
 | Module | Core Question | Course |
 |-|-|-|
 | F1｜Feedback Control and Stability | How can policy outputs be tracked stably under sampling, saturation, and latency? | [State Spaces, PD, Lyapunov Stability, Trajectory Tracking, and Policy Interfaces](/en/route-f/02-f1-反馈控制与稳定性-从-pd-状态空间到学习策略接口) |
-| F2｜Contact, Impedance, and Tactile Sensing | How can robots make appropriate contact under friction, collisions, and compliant environments? | [Contact Constraints, Friction Cones, Force Control, Impedance, and Tactile Feedback Loops](/en/route-f/03-f2-接触-阻抗-力控与触觉-机器人如何学会-碰得对) |
+| F2｜Contact, Impedance, and Tactile Sensing | How can robots make appropriate contact under friction, impacts, and compliant environments? | [Contact Constraints, Friction Cones, Force Control, Impedance, and Tactile Closed Loops](/en/route-f/03-f2-接触-阻抗-力控与触觉-机器人如何学会-碰得对) |
 | F3｜System Identification and Sim-to-Real | How can real dynamics be estimated, latency handled, and the simulation gap bridged? | [Least Squares, Identifiability, Randomization, Online Adaptation, and Latency](/en/route-f/04-f3-系统辨识-延迟与-sim-to-real-模型怎样跨过真实世界差异) |
-| F4｜Humanoids, Mobility, and Whole-Body Control | How can dynamic balance, foot placement, contact switching, and whole-body coordination be handled? | [Floating-Base Dynamics, Centroidal Control, Locomotion RL, and High-Level/Low-Level Interfaces](/en/route-f/05-f4-人形-移动与全身控制-physical-ai-怎样驾驭有动态平衡的身体) |
+| F4｜Humanoids, Mobility, and Whole-Body Control | How can dynamic balance, foothold placement, contact switching, and whole-body coordination be handled? | [Floating-Base Dynamics, Centroidal Control, Locomotion RL, and High-Level/Low-Level Interfaces](/en/route-f/05-f4-人形-移动与全身控制-physical-ai-怎样驾驭有动态平衡的身体) |
 | F5｜Paper and Engineering Lab | How can classical control, MPC, Residual RL, and robust learning be compared fairly? | [From Classical Control to Residual RL and Sim-to-Real](/en/route-f/06-f5-控制与学习工程论文实验室-从经典控制到-residual-rl-与-sim-to-real) |
 
-**Cross-track relationships:** Tracks A, B, and D must ultimately pass real-world execution tests through this track; failure and sensor data generated by this track flow back into Tracks G and E.
+**Cross-track relationships:** Tracks A, B, and D must ultimately undergo real-world execution tests through this track. Failures and sensor data generated by this track are fed back into Tracks G and E.
 
 # Track G｜Systems, Trustworthy Evaluation, and Data Engines
 
-**Track question:** How can algorithms be turned into reproducible, deployable, and auditable real-robot systems that continuously improve through failure data?
+**Track question:** How can algorithms be transformed into reproducible, deployable, and auditable real-world robotic systems that continuously improve using failure data?
 
 ## G0｜Track Core Course: Systems, Trustworthy Evaluation, and Data Engines
 
 [G0｜Systems, Trustworthy Evaluation, and Data Engines: How to Prove That Physical AI Actually Works](/en/route-g/01-g0-系统-可信评测与数据引擎-如何证明-physical-ai-真的有效)
 
-**Engineering Lab:** [OpenPI in Practice and ArcheBase Data Production](/en/route-g/02-a3-6-openpi-实践-从数据契约到机器人闭环)
+**Engineering lab:** [OpenPI in Practice and ArcheBase Data Production](/en/route-g/02-a3-6-openpi-实践-从数据契约到机器人闭环)
 
 ## G1-G4｜Systems and Trustworthy Engineering Course Tree
 
 | Module | Core Question | Course |
 |-|-|-|
-| G1｜Statistical Evaluation and Uncertainty | How can we prove that an improvement is real and determine the uncertainty of the evidence? | [Wilson Intervals, Stratified Estimation, Calibration, and Risk Coverage](/en/route-g/03-g1-统计评测与不确定性-如何证明-physical-ai-真的变好了) |
+| G1｜Statistical Evaluation and Uncertainty | How can we prove that an improvement is real and quantify the uncertainty in the evidence? | [Wilson Intervals, Stratified Estimation, Calibration, and Risk Coverage](/en/route-g/03-g1-统计评测与不确定性-如何证明-physical-ai-真的变好了) |
 | G2｜Data Engines and Reproducibility | How can every fact about data, training, and models remain traceable? | [Schemas, Time Synchronization, Versioning, Lineage, and Quality Gates](/en/route-g/04-g2-数据引擎-复现与版本-physical-ai-的训练事实如何不丢失) |
-| G3｜Deployment Safety and Regression Testing | How can a deployed model be monitored, degraded safely, taken over, rolled back, and continuously kept within its boundaries? | [Safety Envelopes, Runtime Monitoring, Canary Releases, and Incident Regression Testing](/en/route-g/05-g3-部署安全-监控与回归-模型上线后怎样保持可控) |
-| G4｜OpenPI Systems Lab | How can VLA data and checkpoints be turned into a rollback-capable robot deployment? | [From Data Contracts, Training, and Inference Services to Failure Feedback](/en/route-g/06-g4-openpi-与机器人系统工程实验室-从数据到可回滚部署) |
+| G3｜Deployment Safety and Regression Testing | After deployment, how can a model be monitored, degraded gracefully, overridden, rolled back, and continuously kept within its boundaries? | [Safety Envelopes, Runtime Monitoring, Canaries, and Incident Regression Testing](/en/route-g/05-g3-部署安全-监控与回归-模型上线后怎样保持可控) |
+| G4｜OpenPI Systems Lab | How can VLA data and checkpoints be turned into rollback-capable robot deployments? | [From Data Contracts, Training, and Inference Services to Failure Feedback](/en/route-g/06-g4-openpi-与机器人系统工程实验室-从数据到可回滚部署) |
 
 **Additional engineering case study:** [OpenPI in Practice and ArcheBase Data Production](/en/route-g/02-a3-6-openpi-实践-从数据契约到机器人闭环)
 
 # Fast Learning Paths
 
-| Goal | Path | Completion Criteria |
+| Goal | Path | Completion Criterion |
 |-|-|-|
-| Build a comprehensive view in five days | 00 → A0 → B0/C0 → D0/E0 → F0/G0 | Can compare all tracks in terms of learning objects, supervision signals, inference methods, and closed-loop risks |
-| VLA algorithms | 00 → A0 → π series labs → C0 → F0/G0 | Can explain VLA training, action generation, experience-based improvement, and real-world execution |
-| World models | 00 → B0 → C0 → D0 → F0/G0 | Can implement latent dynamics and MPC and validate their benefits for real-world control |
-| Human data | 00 → E0 → E topic labs → A0 → D0 → G0 | Can design cross-embodiment representations, latent actions, and task holdout experiments |
-| Real-world robotics deployment | 00 → F0 → G0, while also selecting A0 or B0 | Can diagnose failures across the policy, control, data, and evaluation layers |
+| Build a comprehensive understanding in five days | 00 → A0 → B0/C0 → D0/E0 → F0/G0 | Can compare all tracks by their learning objects, supervision signals, inference methods, and closed-loop risks. |
+| VLA algorithms | 00 → A0 → π-series labs → C0 → F0/G0 | Can explain VLA training, action generation, experience-based improvement, and real-world execution. |
+| World models | 00 → B0 → C0 → D0 → F0/G0 | Can implement latent dynamics and MPC and validate gains in real-world control. |
+| Human data | 00 → E0 → E specialized labs → A0 → D0 → G0 | Can design cross-embodiment representations, latent actions, and held-out task experiments. |
+| Real-world robotics deployment | 00 → F0 → G0, while also selecting A0 or B0 | Can localize failures across the policy, control, data, and evaluation layers. |

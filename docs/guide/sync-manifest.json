@@ -1,7 +1,7 @@
 {
   "source": "T7dLdyp0RolnUgxQCqTcXyZZnbc",
-  "revision": 87,
-  "syncedAt": "2026-07-22T21:57:02.635Z",
+  "revision": 91,
+  "syncedAt": "2026-07-23T15:36:48.997Z",
   "documents": [
     {
       "token": "UgwUdtz3do3Gp3xNupPcuQFunSh",
@@ -76,7 +76,7 @@
     {
       "token": "FP2SdSVoLoRZusxeajbcBe8Ln2g",
       "title": "B0｜世界模型与模型式规划：让 Physical AI 学会预测“如果这样做，会发生什么”",
-      "revision": 22,
+      "revision": 23,
       "group": "route-b",
       "file": "01-b0-世界模型与模型式规划-让-physical-ai-学会预测-如果这样做-会发生什么.md"
     },
@@ -110,22 +110,22 @@
     },
     {
       "token": "ENq7dECdwoOAFxxDYDxcruNBniB",
-      "title": "B5｜世界模型论文实验室：World Models、Dreamer、MuZero 与 TD-MPC2",
-      "revision": 12,
+      "title": "B5｜决策世界模型谱系：从内部模拟、Dreamer 到 TD-MPC2",
+      "revision": 14,
       "group": "route-b",
-      "file": "06-b5-世界模型论文实验室-world-models-dreamer-muzero-与-td-mpc2.md"
+      "file": "06-b5-决策世界模型谱系-从内部模拟-dreamer-到-td-mpc2.md"
     },
     {
       "token": "IhJ3dxNiMoTluHxSHL0cYbkunTf",
-      "title": "B6｜现代具身世界模型：UniSim、Genie、V-JEPA 2、Cosmos 与动作条件视频",
-      "revision": 15,
+      "title": "B6｜现代世界模型思想谱系：JEPA、空间智能与生成式模拟器",
+      "revision": 21,
       "group": "route-b",
-      "file": "07-b6-现代具身世界模型-unisim-genie-v-jepa-2-cosmos-与动作条件视频.md"
+      "file": "07-b6-现代世界模型思想谱系-jepa-空间智能与生成式模拟器.md"
     },
     {
       "token": "Ywecd7gKho7N9ax85g5ccwYfnVg",
       "title": "B7｜4D 世界状态与 World Action Models：从几何预测到可执行未来",
-      "revision": 15,
+      "revision": 17,
       "group": "route-b",
       "file": "08-b7-4d-世界状态与-world-action-models-从几何预测到可执行未来.md"
     },
